@@ -241,3 +241,96 @@ git cherry-pick
 Explain the difference between rebasing and merge in Git?
 
 
+Introduce yourself
+Hello, myself Pravin Kashinath Parandwal, I’m dedicated software developer with over 10 years of experience in the industry. I am a fullstack developer using ReactJS, Node.js, Angular, JavaScript, HTML, CSS,SCSS, TailwindCSS, Bootstrap and databases like MySQL, SQL, MongoDB which helps me to integrate front-end and back-end systems effectively.
+I have worked with various tools such as JIRA, GIT, GitHub, Bitbucket, Postman, Swagger, VS Code, key-cloak, Workbench, AWS and CI/CD pipeline. 
+My experience spans across diverse domains, including Healthcare, Banking, Airline, Media, and CRM. In my last project, I worked on a healthcare application. It had several modules to manage instrument data. I was mainly responsible for the core cloud application, which was the main system where all other modules connected. This application helped users to see visual data for analysis and reports. There were different types of users, such as cloud customers, on-premise customers, hybrid customers, and clients. Each user had their own dashboard to analyze data and use features like adding, updating, and deleting records. They could also view, upload, and download documents, and work with tables that had filters and reports.
+I’m currently pursuing an MBA and was recently recognized as the “Annual - Most Valuable Developer”. As a senior engineering leader, I had the opportunity to lead and mentor a team of developers. My leadership involved guiding the team through the development lifecycle, promoting coding best practices, and creating a collaborative environment because I believe that the best ideas develop from teamwork.
+I look forward to contributing my skills and knowledge to create innovative and impactful solutions.
+Thank you for considering my profile.
+
+
+How you have 60 days Notic period?
+I was working on an important project for the past few months, and that has ended for now. So, I don’t have a lot on my plate now. My manager and HR are flexible and can release me within the next 60 days. This is a good time for me to explore new opportunities.
+
+ Over the past few months, I was engaged in an important project, which has now been completed. At the moment, I don’t have a lot on my plate, and my manager and HR both are flexible to release me within the next 60 days.
+I wanted to share that I am currently exploring onshore opportunities, and I feel this is an appropriate time to do so.
+
+
+Notes – 
+I’ve been actively exploring onsite job opportunities and would greatly appreciate your support in connecting me with relevant people who could assist or guide me in this process.
+ 
+Profile Summary:
+I am a Full Stack Software Developer with 10+ years of experience, specializing in ReactJS, Node.JS (MERN stack), and Angular. I have been working with Persistent Systems for the past 5+ years.
+ 
+Primary Skills:
+•	Frontend: Angular, ReactJS
+•	Backend: Node.JS
+•	Databases: MySQL, SQL, MongoDB
+•	Environments: AWS, CI/CD Pipeline
+Key Highlights:
+•	Certified in GenAI Foundation, GenAI Practitioners, and AI Prompt Engineering
+•	Completed Lead, Motivate, Engage People certification
+•	Recipient of the Annual Award – “Most Valuable Player in Developer”
+•	Currently pursuing an MBA from Manipal University
+•	Recognized in PULSE as a “Performance Execution Lead”
+I’d be grateful if you could review my profile and share any feedback or suggestions.
+Looking forward to hearing from you. Thank you for your time and consideration.
+
+
+Team Lead speech
+(Seeking an opportunity to leverage my technical expertise and passion for innovation while developing leadership skills in dynamic environment.)
+I have collaborated with team members to optimize code efficiency and part of discussion with product manager, UX designers, and QA teams to ensure alignment of development efforts with overall project goals.
+Do you see a possibility for an international assignment for me? If there is a business need, I would be very happy to go.
+
+Send mail content.
+I am very fascinating in applying for the UI Developer position.
+Please take a moment to review my attached Application Document.
+It would be a sincere pleasure to hear back from you soon to discuss this exciting opportunity.
+
+Last Project: 
+It was bank domain project. It had different modules to manage credit cards data. I was working on B2B credit card collection application. 
+Basically Credit card collection data is allocated to Agencies and then individual agency allocate case to the agent, and set target collection amount. Then agent works on his data and update in the application. 
+B2B application has different user roles likes agency, agent, agency admin, call processor agent, each role has different menus, different functionalities such as add/update/delete functionality, document view/download/upload and different reports, table, filters etc.
+
+Introduction:
+Hello, myself Pravin Kashinath Parandwal, I’m dedicated software developer with over 8.9 years of experience in the industry. My journey in software development has been both challenging and rewarding, allowing me to grow my skills and knowledge across various domains and technologies. 
+Professional experience:
+In my career, I have primarily focused on UI development using Angular, JavaScript, HTML, CSS, SCSS, Bootstrap. My role as UI developer involved creating dynamic, responsive, and user-friendly interfaces that enhance the user experience.
+While my primary expertise lies in UI development, I also have a basic understanding of backend technologies such as .NET, spring boot, MySQL, SQL. This knowledge has enabled me to collaborate effectively with backend developer, understand the full-stack development process, and contribute to the overall success of projects.
+Tools and technologies:
+Throughout my career, I have worked with various tools to enhance productivity and streamline the development process. JIRA has been an essential tool for project management and issue tracking. VS Code, Visual Studio, SQL Server Management Studio has been my preferred tools, offering a rich set of features and extensions that enhance coding efficiency. GIT, GitHub, GitLab, Bitbucket has facilitated version control, enabling smooth collaboration with team members and maintaining code quality.
+My experience extends to project development, where I have worked with AWS in windows and c-Panel in Linux environments. Deploying projects on AWS has provided me with valuable insights into cloud computing, scalability, and performance optimization. 
+Leadership and mentoring:
+As a senior engineering lead, I had the privilege of leading and mentoring a team of talented developers. My leadership involved guiding the team through the development lifecycle, ensuring adherence to best practices, fostering a collaborative and innovative work environment, encouraging team members to take ownership of their tasks and support them in achieving their professional goals. And I believe, the best ideas are developed in team.
+Domain experience:
+My experience spans across diverse domains, including Banking, Airline, Media, and Customer Relationship Management. Each domain has presented unique challenges and opportunities, allowing me to develop a comprehensive understanding of industry-specific requirements and best practices.
+Last Project: 
+It was bank domain project. It had different modules to manage credit cards data. I was working on B2B credit card collection application. 
+Basically, Credit card collection data is allocated to Agencies and then individual agency allocate case to the agent and set target collection amount. Then agent works on his data and update in the application. 
+B2B application has different user roles likes agency, agent, agency admin, call processor agent, each role has different menus, different functionalities such as add/update/delete functionality, document view/download/upload and different reports, table, filters etc.
+Learning:
+I am a firm believer in continuous learning and professional development. I have actively participated in internal learning sessions. Also I have completed GenAI courses, where I have gained insights into emerging technologies, industry trends, and advance development techniques. There courses have not only expanded my knowledge but also inspired me to explore new areas and stay ahead of the curve.
+Community Involvement:
+Beyond my professional endeavors, I am actively involved in social events and community initiatives. I have participated in river cleaning drives, where we work together to preserve our natural resources and promote environmental sustainability. Additionally, I have been part of tree plantation campaigns, contributing to greener and healthier surroundings.
+Conclusion:
+I am excited about the opportunities that lie ahead and look forward to contributing my skills and knowledge to create innovative and impactful solutions.
+Thank you for considering my profile.
+
+
+I hope this message finds you well. I'm reaching out because I noticed you work at Persistent Systems, and I'm very interested in the UI Developer position currently open at Persistent Systems.
+I would be grateful if you could refer me for this role or connect me with the hiring team.
+A bit about my background: I have around 1.5 years of experience at Parallel Minds, where I've built frontend applications with ReactJS/NextJS, TypeScript/JavaScript.
+I believe my experience aligns well with this opportunity, and I'm confident I can contribute meaningfully to your team.
+My resume is attached for your reference. I'd be happy to provide any additional information or discuss my qualifications further.
+Thank you for considering my request!
+
+
+II. Summary Introduction:
+Hello, myself Pravin Kashinath Parandwal, I’m dedicated software developer with over 8.9 years of experience in the industry. I have primarily focused on UI development using Angular, JavaScript, HTML, CSS, SCSS, Bootstrap etc. Along with my UI skills, I also have a basic understanding of backend technologies such as .NET, MySQL, SQL, which helps me to integrate front-end and back-end systems effectively.
+I have worked with various tools such as JIRA, GIT, GitHub, Bitbucket, Postman, Swagger, VS Code, Visual Studio, SQL Server Management Studio, Workbench, AWS etc. Recently, I awarded as a “Most Valuable Player in Developer” in this Annual Award 2024.
+My experience spans across diverse domains, including Banking, Airline, Media, and CRM. In last project I was working on bank application. It had different modules to manage credit cards data. I was working on B2B credit card collection application. Basically, Credit card collection data is allocated to Agencies. Those agencies allocate that credit card data to the agents with certain criteria. Then individual agents work on that data and updates it in the application. B2B application has different user roles likes agency, agency admin, agent, call processor agent, etc. Each role has different menus, functionalities such as add/update/delete, document view/download/upload and different table with filters and reports etc.
+As a senior engineering lead, I had the privilege of leading and mentoring a team of developers. My leadership involved guiding the team through the development lifecycle, promoting best practices, and fostering a collaborative environment because I believe that the best ideas emerge from teamwork.
+I look forward to contributing my skills and knowledge to create innovative and impactful solutions.
+Thank you for considering my profile.
+
