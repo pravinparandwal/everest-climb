@@ -1,0 +1,3686 @@
+Module 4: Hands-On With AWS Cloud9 Summary Notes
+1. Introduction to AWS Cloud9:
+AWS Cloud9 is a cloud-based Integrated Development Environment (IDE) that allows developers to write, run, and debug code using only a web browser.
+
+It eliminates the need for installing and maintaining a development environment locally by providing access to a virtual machine in the cloud pre-equipped with popular development tools.
+
+
+
+2. Setting Up AWS Cloud9:
+Requires an AWS account, an internet connection, and a local machine (Windows, Linux, or macOS).
+
+Involves creating a new EC2 instance or connecting to an existing one.
+
+Offers a choice of instance types; default is t2.micro which is free tier eligible.
+
+Allows for setting up environment preferences like auto hibernation to save costs.
+
+
+
+3. Components of AWS Cloud9:
+Editor: Where you write your source code. It supports several programming languages and has features like syntax highlighting and error detection.
+
+Terminal: Acts as the command line interface for the EC2 instance, allowing you to execute commands directly in the cloud.
+
+Debugger: Helps identify and fix errors in the code.
+
+Environment Window: Displays the file structure of your project and allows management of files and directories.
+
+Preferences: Customizable settings for the Cloud9 environment to suit individual development needs.
+
+
+
+4. Working with AWS Cloud9:
+Running Code: Execute code directly within the environment using the 'Run' button for immediate results.
+
+File Management: Create, upload, or drag and drop files into the environment. Supports viewing of hidden files.
+
+Collaboration: Share your development environment with others for real-time collaboration.
+
+Customizing Workspace: Adjust the layout of the editor, terminal, and other sections according to preference.
+
+
+
+5. Key Features:
+Prepackaged Tools: Comes with essential tools for popular languages like Python, Java, PHP, and more. Additional tools can be installed as needed.
+
+Cloud-based: Accessible from anywhere with an internet connection, providing flexibility and convenience.
+
+Integrated Terminal: Offers a built-in terminal for seamless execution of commands.
+
+Plugins: Supports additional plugins to extend functionality and customization.
+
+Source Control Integration: Easily integrates with version control systems like Git for efficient code management.
+
+
+
+6. Navigating Cloud9 IDE:
+Main Menu: Access various functions, settings, and tools.
+
+Status Bar: Provides quick information about the current file, such as line number, character position, file type, and encoding.
+
+Immediate Window: For testing small JavaScript code snippets.
+
+Process List: Shows running processes and allows you to manage them.
+
+Debugger Window: Use this to debug and fix issues in your code.
+
+
+
+7. Practical Tips:
+Regularly save your work and commit changes to avoid data loss.
+
+Familiarize yourself with keyboard shortcuts for efficiency.
+
+Regularly update and maintain your environment to ensure it runs smoothly.
+
+Explore and customize the IDE according to your workflow and preferences.
+
+
+
+Remember, AWS Cloud9 is a powerful tool that streamlines the development process by offering a comprehensive, integrated, and flexible environment in the cloud. As you become more familiar with its features and capabilities, you'll be able to harness its full potential for your development needs.
+
+
+Module 5: Introduction to Linux for DevOps Engineers - Summary Notes
+1. Understanding Linux:
+Linux: A free, open-source, and powerful operating system used for managing hardware and software on a computer. It's known for its stability, security, and efficiency.
+
+Kernel: The core of Linux, managing system resources and hardware, scheduling processes, and facilitating user interactions.
+
+
+
+2. Key Components of a Linux System:
+Hardware: The physical components like CPU, RAM, and storage devices.
+
+Applications: Software that performs specific tasks; examples include browsers and word processors.
+
+Shell: A command interpreter allowing users to interact with the kernel using text-based commands.
+
+Daemons: Background processes handling system tasks without direct user interaction.
+
+Software: Includes operating systems, applications, drivers, and utilities.
+
+
+
+3. Linux Distributions:
+Various versions of Linux are available, known as distributions (distros), each with unique features. Examples include Ubuntu, Fedora, Debian, CentOS, and Kali Linux.
+
+
+
+4. Why Linux in DevOps:
+Open Source: Freely available source code that encourages collaborative development.
+
+Multiuser Capability: Supports multiple users at the same time, efficiently managing resources.
+
+Security: Known for robust security features with less vulnerability to viruses and malware.
+
+Stability: Offers a stable environment, especially important for servers and continuous operations.
+
+
+
+5. Linux Architecture:
+Kernel: Manages and controls hardware resources.
+
+Shell: Interacts with the kernel via text-based commands.
+
+Daemons: Runs background processes.
+
+Applications and Utilities: Perform various tasks on the system.
+
+
+
+6. Linux File System:
+Understand the hierarchical structure of Linux, where everything is considered a file, including directories, and it typically starts from the root '/'.
+
+
+
+7. Essential Linux Commands:
+While Linux supports numerous commands, mastering a core set is sufficient for most tasks in DevOps. Examples include `ls`, `cd`, `pwd`, `cat`, `chmod`, `wget`, and `grep`.
+
+
+
+8. File Permissions:
+Linux file permissions determine who can read, write, or execute a file. Understanding these permissions is crucial for managing security and access controls.
+
+
+
+9. Package Management:
+Learn to install, update, and manage software packages using tools like `apt` in Ubuntu, `yum` or `dnf` in Fedora/CentOS, or `pacman` in Arch Linux.
+
+
+
+10. Scripting:
+Bash scripting is an invaluable skill for automating tasks in Linux, allowing for complex operations to be executed efficiently.
+
+
+
+11. Networking Commands:
+Familiarize yourself with networking commands such as `ifconfig`, `ping`, `netstat`, and `ssh` for network management and troubleshooting.
+
+
+
+12. Process Management:
+Understand how to view, start, stop, and manage the system and user processes using commands like `ps`, `top`, `kill`, and `systemctl`.
+
+
+
+Important Tips:
+Practice: Regularly use the terminal for your daily tasks to become more comfortable with Linux commands.
+
+Customization: Explore and customize your shell environment to suit your workflow.
+
+Community: Engage with the Linux community through forums, Q&A sites, and local user groups to stay updated and get help.
+
+
+
+This module has equipped you with the basic understanding and skills needed to operate Linux systems, particularly in a DevOps context. The focus on core concepts and commands will streamline your cloud operations and make you proficient in Linux administration. Continue to build on these foundations as you advance in your DevOps journey.
+
+Module 6: Setting Up Environment - Summary Notes
+1. Introduction to AWS EC2:
+EC2 (Elastic Compute Cloud): A virtual server in AWS's cloud environment.
+
+Importance: Allows you to run and manage server instances virtually with various operating systems, including different Linux distributions.
+
+
+
+2. Creating a Linux EC2 Instance:
+Step 1: Log into the AWS Account and navigate to the EC2 dashboard.
+
+Step 2: Launch a new instance and select an Amazon Machine Image (AMI), preferably Amazon Linux 2 for optimized AWS integration.
+
+Step 3: Choose an instance type, preferably `t2.micro` for free tier eligibility.
+
+Step 4: Configure instance details, add storage, and configure security groups.
+
+Step 5: Review, launch the instance, and select or create a new key pair for SSH access.
+
+
+
+3. Connecting to Your EC2 Instance:
+EC2 Instance Connect: Provides a browser-based interface to connect to instances.
+
+SSH (Secure Shell): A protocol used to securely connect to instances via command line (requires PEM file).
+
+Session Manager: A fully managed AWS Systems Manager capability to manage EC2 instances without opening an inbound port or managing keys.
+
+EC2 Serial Console: Allows connection to the instance's serial port for troubleshooting instances.
+
+
+
+4. Basic Linux Commands Overview:
+Navigational Commands: `ls`, `cd`, `pwd`
+
+File Operations: `touch`, `cat`, `cp`, `mv`, `rm`
+
+Directory Management: `mkdir`, `rmdir`
+
+Viewing & Editing Files: `nano`, `vi`, `more`, `less`
+
+Permissions: `chmod`, `chown`
+
+Networking: `ping`, `curl`, `wget`
+
+System Monitoring: `top`, `ps`, `free`, `df`
+
+
+
+5. Linux Directories and Files:
+/etc: Configuration files.
+
+/var: Variable files like logs.
+
+/home: User directories.
+
+/bin: User binaries.
+
+/sbin: System binaries.
+
+/dev: Device files.
+
+
+
+6. Tips and Best Practices:
+Regular Backups: Ensure to have backups of your instances and important data.
+
+Security: Regularly update and patch your Linux system, and configure security groups wisely.
+
+Resource Monitoring: Keep an eye on resource usage and optimize as needed.
+
+Documentation: Keep notes on configurations and changes made for easier troubleshooting.
+
+
+
+7. Additional Tools and Resources:
+AWS Documentation: Provides a wealth of information on EC2 and other AWS services.
+
+Linux Man Pages: Use the `man` command to get help on any Linux command.
+
+Online Communities: Engage with communities for AWS and Linux for troubleshooting and tips.
+
+
+
+Reminders for Students:
+Regular practice is key to becoming proficient in managing Linux environments.
+
+Always terminate or stop instances when not in use to avoid unnecessary charges.
+
+Experiment within the free tier limits to avoid unexpected costs.
+
+
+
+This summary provides a foundational understanding of setting up a Linux environment using AWS EC2 and basic Linux commands. Keep this handy for quick reference and as a guide for your practice sessions.
+
+
+
+Happy learning!
+
+Module 7: Hands-On Linux Project - Summary Notes
+Understanding Linux Commands
+
+
+1. Linux Filesystem Hierarchy:
+- `/`: Root directory, the top-level directory.
+
+- `/bin`: Essential user command binaries (for use by all users).
+
+- `/boot`: Static files of the boot loader.
+
+- `/dev`: Device files.
+
+- `/etc`: Host-specific system configuration.
+
+- `/home`: User home directories.
+
+- `/lib`: Essential shared libraries and kernel modules.
+
+- `/opt`: Add-on application software packages.
+
+- `/tmp`: Temporary files.
+
+- `/usr`: Secondary hierarchy for read-only user data; contains the majority of (multi-)user utilities and applications.
+
+- `/var`: Variable files—files whose content is expected to continually change during normal operation of the system, such as logs, spool files, and temporary e-mail files.
+
+
+
+2. Common Linux Commands:
+- `ls`: List directory contents.
+
+- `cd`: Change the working directory.
+
+- `chmod`: Change file mode bits.
+
+- `chown`: Change file owner and group.
+
+- `pwd`: Print working directory.
+
+- `mkdir`: Create a new directory.
+
+- `rm`: Remove files or directories.
+
+- `touch`: Change file timestamps or create an empty file.
+
+- `cat`: Concatenate and print file contents.
+
+- `nano`, `vi`, `vim`: Text editors.
+
+
+
+3. Package Management:
+- `yum`: Package manager for RHEL-based distributions.
+
+- `apt`: Package manager for Debian-based distributions.
+
+- Update system: `sudo yum update` or `sudo apt update && sudo apt upgrade`.
+
+- Install packages: `sudo yum install [package]` or `sudo apt install [package]`.
+
+
+
+4. Text Editors:
+-Nano: Beginner-friendly, easy to use.
+
+-Vi/Vim: Advanced text editors with modes (insert and command mode), powerful and efficient but with a steeper learning curve.
+
+
+
+5. Remote File Transfer:
+- `scp`: Securely copy files between local and remote hosts.
+
+
+
+6. User and Group Management:
+- `sudo`: Execute a command as another user, typically the superuser.
+
+
+
+7. Accessing and Editing Files:
+- `cat`: Viewing contents of files.
+
+- `nano`, `vi`, `vim`: Editing files.
+
+- `scp`: Transferring files.
+
+- `rm`: Removing files.
+
+
+
+8. Hosting a Static Website:
+- Understanding web servers like Apache and Nginx.
+
+- Hosting files in `/var/www/html` or the Nginx equivalent directory.
+
+- Modifying content and ensuring proper permissions.
+
+
+
+9. Permissions:
+- Understanding `chmod` and file permissions (read, write, execute for owner, group, and others).
+
+- Using `sudo` for elevated privileges.
+
+
+
+10. Monitoring and Managing Processes:
+- `ps`, `top`, `htop`: Tools for monitoring active processes.
+
+- `kill`, `pkill`: Commands to stop or kill processes.
+
+
+
+
+
+Best Practices and Tips
+
+
+1. Maintain a Notebook: Keep a record of commands, syntaxes, and their use cases.
+
+2. Understand File Permissions: Correct file permissions are crucial for security and functionality, especially when hosting websites.
+
+3. Regularly Update System: Keep your Linux system updated to ensure security and efficiency.
+
+4. Practice Safe Commands: Always double-check commands, especially when using `rm`, `chmod`, or operating as `root`.
+
+5. Utilize Manual Pages: Use `man [command]` to understand options and usage of commands.
+
+
+
+Print these notes and keep them handy as you work through Linux environments. They serve as a quick reference guide and a summary of the critical skills and commands you've learned throughout the module.
+
+
+Module 8: Version Control with AWS CodeCommit - Summary Notes
+Understanding AWS CodeCommit
+AWS CodeCommit: A fully managed source control service that hosts secure Git-based repositories.
+
+Use: It enables team collaboration, source code storage, and management with version control.
+
+Integration: Seamlessly integrates with other AWS services for continuous integration and delivery.
+
+Key Features of AWS CodeCommit
+Fully Managed: AWS handles the heavy lifting of infrastructure management.
+
+Secure: Offers strong encryption and access controls for secure code management.
+
+Scalable: Automatically scales to accommodate growing project needs.
+
+Integrable: Works well with other AWS services for a complete DevOps cycle.
+
+Cost-Effective: Charges based on storage and data transfer without upfront fees.
+
+AWS CodeCommit in Software Development
+Version Control: Manages and tracks versions of code changes, allowing you to revert or branch as needed.
+
+Branching & Merging: Enables concurrent work on different features and smooth integration of changes.
+
+Collaboration: Facilitates team cooperation with shared repositories and tracked changes.
+
+Setting Up AWS CodeCommit
+1. Create an AWS Account: Start by setting up your AWS account.
+
+2. Create an IAM User: Establish an IAM user with permissions for CodeCommit.
+
+3. Create Repository: Use the AWS Console, CLI, or Git tools to create a new repository.
+
+4. Clone Repository: Clone the repo to your local machine for development.
+
+5. Configure Git Credentials: Set up authentication for secure access.
+
+6. Push Changes: Make changes locally and push them back to the CodeCommit repository.
+
+Connection Methods to AWS CodeCommit
+HTTPS: Secure method using HTTPS credentials for easy access.
+
+SSH: Utilizes SSH keys for secure, encrypted connections.
+
+HTTPS GRC: Recommended for federated access and temporary credentials.
+
+Best Practices for AWS CodeCommit
+Regular Commits: Frequently commit changes to track progress and changes.
+
+Branch Strategically: Use branches for new features or major changes.
+
+Monitor and Review: Regularly review code and monitor repository for any issues.
+
+Secure Access: Always ensure proper access control and encryption settings.
+
+Continuous Integration and Continuous Deployment (CI/CD)
+CI/CD Concept: Automates the software release process through continuous integration, testing, and deployment.
+
+CodeCommit in CI/CD: Acts as the source control service, integrating with CodeBuild, CodeDeploy, and CodePipeline for automated pipelines.
+
+Conclusion
+AWS CodeCommit is a powerful, secure, and scalable Git-based repository hosting service that is integral for modern software development. It's designed to enhance collaboration, streamline development processes, and provide a robust platform for managing your code in a cloud environment.
+
+
+
+Note: Always refer to the latest AWS documentation for updates or changes to services and features.
+
+
+
+Print these notes as a concise guide to AWS CodeCommit and as a reference for your learning journey in managing and collaborating on code in a cloud environment.
+
+
+Module 9: Hands-On With AWS CodeCommit - Summary Notes
+Overview of AWS CodeCommit:
+Definition: AWS CodeCommit is a version control service hosted by Amazon Web Services that securely stores and manages your development projects, including applications and documents.
+
+Primary Use: It is used to collaborate on code with team members, maintain version history, and securely manage your projects using Git-based repositories.
+
+
+
+Key Features of AWS CodeCommit:
+1. Version Control: Track and manage changes to code and files.
+
+2. Collaboration: Share and collaborate on code with team members.
+
+3. Security: Encrypt files stored in repositories and manage access with AWS Identity and Access Management (IAM).
+
+4. Integration: Seamlessly integrate with other AWS services such as AWS CodeBuild, CodeDeploy, and CodePipeline for CI/CD workflows.
+
+5. Scalability: Scale your repositories with your needs, without managing infrastructure.
+
+
+
+Connecting to Repositories:
+HTTPS: Securely clone, push, and pull repository changes over HTTPS.
+
+SSH: Use SSH keys for a secure connection to repositories.
+
+Git CLI: Utilize the Git command-line tool for repository management tasks.
+
+
+
+Notifications and Rules:
+Notification Rules: Set up rules to receive notifications for specific events in your repositories, like pull request creation or commit changes.
+
+AWS SNS Integration: Use Amazon Simple Notification Service (SNS) topics to route and manage notifications.
+
+
+
+Branching and Merging:
+Branching: Create branches to manage different lines of development within the same repository.
+
+Merging: Combine code changes from different branches into a single branch.
+
+Pull Requests: Review, discuss, and merge code changes using pull requests.
+
+
+
+Cross-Account Access:
+Definition: Access and use resources in a CodeCommit repository from another AWS account.
+
+Use Cases: Facilitate collaboration between teams or departments, especially when working on shared projects or services.
+
+
+
+Creating Notification Rules:
+Purpose: Stay informed of activities like commits, pull requests, and branch or tag creation in your repositories.
+
+Method: Configure rules through AWS CodeCommit console or AWS CLI, specifying events and targets for notifications.
+
+
+
+Collaborative Software Development:
+Branches: Use branches for separate development tasks to avoid conflicts and streamline feature development and bug fixes.
+
+Pull Requests: Implement code reviews and discussions before merging code changes into the main branch.
+
+
+
+Repository Migration:
+From GitHub to CodeCommit: Migrate repositories from GitHub to AWS CodeCommit for centralized management and enhanced security features.
+
+
+
+Security and Permissions:
+IAM Integration: Control who can access and perform actions in CodeCommit repositories using AWS IAM policies and roles.
+
+Temporary Security Credentials: Utilize AWS Security Token Service (STS) for secure, temporary access to resources.
+
+
+
+Best Practices:
+Regularly update and review IAM policies and permissions.
+
+Utilize branches and pull requests for collaborative development and code review.
+
+Monitor repository activities and set up appropriate notification rules.
+
+Keep your local Git client and AWS CLI tools updated for best performance and security.
+
+
+
+These notes are designed to provide a concise overview of AWS CodeCommit and how to effectively use it for managing and collaborating on code. Keep them handy as a reference while working with CodeCommit or when setting up new projects and repositories.
+
+
+Module 10: Building Projects with AWS CodeBuild - Summary Notes
+Introduction to AWS CodeBuild
+AWS CodeBuild: A fully managed continuous integration service that compiles source code, runs tests, and produces software packages ready for deployment.
+
+Purpose: Automate the compilation, testing, and packaging of code in the AWS cloud.
+
+
+
+Key Concepts
+Software Build Phase: The process of converting human-readable code into machine-readable format that a computer can understand and execute.
+
+Buildspec.yml: A YAML format file used by AWS CodeBuild to define build commands and related settings.
+
+Artifacts: The output of the build process, which can include executable files, libraries, or other dependencies necessary for the deployment of the software.
+
+Continuous Integration and Continuous Deployment (CI/CD): Automates the integration of code changes from multiple contributors and the deployment process, ensuring a streamlined development lifecycle.
+
+
+
+Benefits of AWS CodeBuild
+Fully Managed: AWS manages infrastructure, allowing developers to focus on coding rather than managing servers.
+
+Integration with AWS Services: Seamlessly integrates with other AWS services like CodeCommit, CodeDeploy, and CodePipeline.
+
+Flexibility and Customization: Offers options to customize the build environment and process through buildspec.yml.
+
+Security: Implements role-based access controls, encryption, and network security to protect the build environment.
+
+Cost-Effective: Users only pay for the compute resources they consume during the build process.
+
+
+
+Use Cases for AWS CodeBuild
+Continuous Integration/Continuous Deployment (CI/CD): Automates the building and testing of code every time a team member commits changes to version control.
+
+Building and Packaging Applications: Automates the compilation, testing, and packaging of software applications.
+
+Automated Testing: Executes a series of tests on the software to ensure quality and functionality.
+
+Infrastructure as Code (IaC): Automates the creation and management of infrastructure through coded scripts.
+
+Docker Container Building: Automates the process of creating Docker containers for applications.
+
+
+
+How to Use AWS CodeBuild
+Create a Build Project: Define the environment, source, and build specifications.
+
+Write a Buildspec.yml File: Specify the commands and settings for the build environment.
+
+Run Builds and Monitor: Trigger builds manually or through code changes and monitor the build progress and outcomes.
+
+Review and Store Artifacts: Check the build output, review logs, and store the artifacts in a repository like Amazon S3.
+
+
+
+Security and Best Practices
+Use IAM Roles: Define roles and permissions specifically for CodeBuild to ensure secure access.
+
+Monitor and Log: Utilize AWS CloudWatch for logging and monitoring build operations.
+
+Keep Artifacts Secure: Store build artifacts securely in Amazon S3 with encryption enabled.
+
+Regularly Update Buildspec: Keep your buildspec.yml updated with the latest commands and dependencies for your build process.
+
+
+
+AWS CodeBuild Pricing
+Pay-as-you-go: Pricing is based on the build minutes consumed, offering a flexible and cost-effective solution for businesses of all sizes.
+
+
+
+AWS CodeBuild is an essential tool in the AWS ecosystem for automating the build and testing phases of software development. It integrates well with other AWS services, offers robust security features, and provides a flexible, cost-effective solution for teams aiming to streamline their development and deployment processes. Utilize this tool to enhance productivity, reduce manual errors, and ensure consistent builds across your development lifecycle.
+
+
+
+Print and keep these notes as a reference guide while working with AWS CodeBuild to understand its purpose, benefits, use cases, and how to implement it effectively in your CI/CD pipeline.
+
+
+Module 11: Hands-On With AWS CodeBuild - Summary Notes
+Introduction to AWS CodeBuild
+AWS CodeBuild: A fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+
+Purpose: Automates the process of converting human-readable code into computer-readable binary code, facilitating continuous integration and continuous delivery (CI/CD) practices.
+
+
+
+Key Concepts
+Buildspec.yml: Core to AWS CodeBuild, it's a configuration file that specifies how the source code should be built. It defines the build commands and the environment configurations.
+
+Artifacts: The output of the build process, usually executable files or compiled code, stored in Amazon S3 buckets.
+
+Phases: The build process is divided into phases like INSTALL, PRE_BUILD, BUILD, and POST_BUILD, each performing specific tasks.
+
+
+
+Steps in a Typical AWS CodeBuild Project
+Prepare Source Code: Write and store application source code, often in Amazon S3 or sourced from repositories like GitHub or AWS CodeCommit.
+
+Create Buildspec.yml: Define instructions for building the project, including environment setup, build commands, and artifacts location.
+
+Set Up Environment: Choose the operating system, programming language, and compute type for the build environment.
+
+Run Build: Execute the build process, which follows the instructions in buildspec.yml.
+
+Store Artifacts: Upon successful build, store the compiled code or artifacts in a specified Amazon S3 bucket.
+
+
+
+Best Practices
+Maintain a Clean Build Spec: Keep the buildspec.yml file clear and well-documented for ease of maintenance and updates.
+
+Monitor Build Logs: Regularly check CloudWatch logs for successful builds and troubleshoot failed builds.
+
+Secure Artifacts: Ensure that the S3 buckets storing artifacts are secured and have the appropriate permissions set.
+
+
+
+Troubleshooting Common Issues
+Failed Builds: Check CloudWatch logs for errors and correct any issues with the source code or buildspec.yml file.
+
+Timeout Errors: Adjust the timeout settings if builds are not completed within the expected time.
+
+Dependency Errors: Ensure that all dependencies are correctly specified and accessible during the build process.
+
+
+
+Cleanup
+After practicing with AWS CodeBuild, always delete the resources created to avoid ongoing charges. This includes S3 buckets used for input and output, as well as any deployed instances or services.
+
+
+
+AWS CodeBuild is a critical tool in the AWS ecosystem for automating the process of building software. By understanding how to effectively use CodeBuild, along with its configuration and integration points, developers can streamline the build process for their applications, ensuring faster development cycles and more reliable builds.
+
+
+
+Print these notes as a reference guide while working with AWS CodeBuild or preparing for exams involving AWS services. Keep practicing with different build scenarios to become proficient in managing build processes and automation using AWS CodeBuild.
+
+
+Module 12: AWS CodeBuild Real-Time projects, Logging, and Monitoring Notes
+1. Overview of AWS CodeBuild:
+AWS CodeBuild is a fully managed build service that compiles source code, runs tests, and produces software packages ready for deployment.
+
+It automates the process of building and testing code in the AWS cloud, making it faster and more reliable.
+
+
+
+2. Real-Time Projects with AWS CodeBuild:
+AWS CodeBuild can be used for various real-time projects, such as building and deploying static websites, applications, and services.
+
+It supports integration with source control services like GitHub, triggering builds automatically upon code commit.
+
+
+
+3. Logging in AWS CodeBuild:
+AWS CloudTrail: Records all API calls made on AWS CodeBuild, providing an audit trail of actions taken.
+
+Event History: Shows all recorded events, aiding in debugging and auditing.
+
+CloudTrail Trails: Allows for logging of continuous delivery and API interactions over time, which can be stored in Amazon S3 buckets.
+
+
+
+4. Monitoring in AWS CodeBuild with AWS CloudWatch:
+Project-wise and account-wise monitoring: Provides insights into individual build projects or an overview of all projects in an AWS account.
+
+CodeBuild Metrics: Includes metrics like build duration, start time, success, and failure counts.
+
+Resource Utilization Metrics: Monitors the CPU, memory, and storage used during builds.
+
+CloudWatch Alarms: Set up alarms for monitoring specific metrics thresholds to get alerts and take reactive actions.
+
+Integration with CloudWatch Logs: Provides detailed logs of build activities for deeper analysis and understanding.
+
+
+
+5. Key Metrics for Monitoring:
+Build Duration: Time taken from start to finish of a build.
+
+CPU Utilized: Percentage of CPU resources used during the build.
+
+Memory Utilized: Amount of memory used during the build process.
+
+Storage Read/Write Bytes: Data read from or written to storage during the build.
+
+
+
+6. Creating and Managing CloudWatch Alarms:
+Alarms can be set for various metrics to trigger notifications or actions.
+
+Configurations include defining the metric, setting a threshold, and specifying the action to take when the alarm state is reached.
+
+
+
+7. Best Practices:
+Regularly review and analyze build logs and metrics to identify trends or potential issues.
+
+Automate reactions to specific events or metrics to maintain continuous integration and delivery flow.
+
+Keep your build and environment specifications (buildspec.yml) updated and version-controlled.
+
+Monitor resource utilization to optimize costs and performance.
+
+
+
+8. Troubleshooting:
+Use CloudTrail logs to trace back the specific API calls or user actions that may have led to a build issue.
+
+Examine CloudWatch logs and metrics for anomalies or patterns that indicate problems.
+
+Validate your buildspec.yml file for syntax or logical errors that might cause build failures.
+
+
+
+AWS CodeBuild, combined with logging and monitoring tools like AWS CloudTrail and AWS CloudWatch, provides a robust environment for automating, managing, and optimizing your build processes. Leveraging these tools effectively ensures smoother deployments, better resource management, and quicker reaction to any issues that arise during the build process. Make sure to integrate best practices into your workflow to get the most out of AWS CodeBuild.
+
+Module 13: Deployment Automation With AWS CodeDeploy
+Introduction to AWS CodeDeploy
+AWS CodeDeploy automates the deployment of applications to various compute services like Amazon EC2, AWS Lambda, and on-premises servers. It enables developers to consistently release new features and updates efficiently.
+
+
+
+Key Components of AWS CodeDeploy
+
+
+Application: A container in CodeDeploy that uniquely identifies the software you want to deploy.
+
+Compute Platforms: CodeDeploy supports deployment to Amazon EC2 instances, AWS Lambda functions, on-premises servers, and Amazon ECS.
+
+Deployment Configuration: Defines rules and success/failure conditions for your deployment, such as minimum healthy hosts.
+
+Deployment Group: A set of EC2 instances, Lambda functions, or ECS services to which the application is to be deployed.
+
+Deployment Type: Can be in-place or blue/green. In-place updates the existing instances while blue/green redirects traffic between two complete environments.
+
+IAM Instance Profile: Gives EC2 instances in a deployment group the required permissions to access AWS resources.
+
+Revision: Represents a version of deployable content, such as code, executables, etc.
+
+Service Role: Grants CodeDeploy permissions to access AWS resources on your behalf.
+
+Target Revision: The most recent version of the application you want to deploy.
+
+
+
+Deployment Strategies
+
+
+In-Place Deployment: The application is stopped on each instance, and the new version is installed.
+
+Blue/Green Deployment: The new version is deployed to a separate environment, then traffic is shifted from the old version to the new version.
+
+
+
+Best Practices
+
+
+Use IAM Roles Effectively: Ensure your EC2 instances have the correct IAM instance profile and that CodeDeploy has an appropriate service role.
+
+Choose the Right Deployment Configuration: Select or customize a deployment configuration that matches your need for speed and risk tolerance.
+
+Understand Deployment Types: Be clear on when to use in-place versus blue/green deployments.
+
+Rollback Plans: Utilize automatic rollback features on deployment failure to maintain application stability.
+
+Integrate with Other AWS Services: Use integrations with services like CodePipeline for continuous delivery and CloudFormation for infrastructure as code to enhance your deployment process.
+
+Monitor and Log: Use AWS CloudTrail and CloudWatch to monitor and log deployment activities for auditing and troubleshooting.
+
+
+
+AWS CodeDeploy is a powerful service that simplifies and automates the application deployment process, allowing teams to deploy reliably and with greater speed.
+
+
+
+Understanding its components, strategies, and best practices is crucial for effectively managing and automating your deployments. With the right setup and configuration, you can significantly reduce the risk of deployment errors and ensure that your applications are always up to date with the latest features and fixes.
+
+
+Module 14: Hands-On with AWS CodeDeploy - Summary Notes
+Setting Up AWS CodeDeploy
+
+
+1. AWS Account Setup
+- Ensure you have an AWS account and an IAM user with administrative permissions.
+
+- Enable programmatic access for the IAM user to allow interactions with AWS services through CLI or SDKs.
+
+
+
+2. Create a Service Role for CodeDeploy
+- A service role is necessary for giving permissions to CodeDeploy to perform actions on your behalf.
+
+- Create the service role through the AWS Management Console, specifying CodeDeploy as the trusted entity and attaching the appropriate managed policy.
+
+
+
+3. Limit IAM User's Permissions
+- Restrict the IAM user's permissions to minimize security risks and prevent unauthorized actions.
+
+- Specify permissions in the IAM user’s permission policy settings to allow only necessary actions for CodeDeploy tasks.
+
+
+
+4. Create an IAM Instance Profile for EC2 Instances (if required)
+- Necessary when deploying to EC2 instances to grant them access to AWS resources like S3 buckets.
+
+- Create an IAM role (instance profile) and attach policies that allow access to necessary resources.
+
+
+
+5. Install CodeDeploy Agent (if deploying to EC2/On-Premises)
+- The CodeDeploy agent is required on each EC2 instance or on-premises server in the deployment group.
+
+- It coordinates with the CodeDeploy service to execute deployment tasks.
+
+
+
+Components of AWS CodeDeploy
+
+
+1. Application
+- A container or grouping of the software you want to deploy, similar to organizing tools into toolboxes.
+
+
+
+2. Compute Platform
+- The target platform where you will deploy your application. This includes Amazon EC2, AWS Lambda, on-premises servers, and Amazon ECS.
+
+
+
+3. Deployment Configuration
+- Set of rules and settings defining how the deployment should be performed, including strategy, environment, traffic routing, and error handling.
+
+
+
+4. Deployment Group
+- A collection of resources (like EC2 instances) targeted for deployment. It specifies where the application will be deployed.
+
+
+
+5. Deployment Type
+- The method of deployment, either in-place (updating the application directly on the target set of instances) or blue/green (creating a duplicate environment for testing before rerouting traffic).
+
+
+
+6. IAM Instance Profile
+- An IAM role attached to EC2 instances, granting them necessary permissions to access AWS resources during deployment.
+
+
+
+7. Revision
+- The new version of your software application packaged with all necessary files and configurations, ready to be deployed.
+
+
+
+8. Service Role
+- A specific IAM role that grants CodeDeploy permission to access other AWS services and perform deployment-related tasks.
+
+
+
+9. Target Revision
+- The most recent version or revision of the application that CodeDeploy will deploy to the specified instances.
+
+
+
+10. Additional Components
+- Application Specification Files, Instance Health, CodeDeploy Agent are additional components to be familiar with when working with deployments and specific requirements.
+
+
+
+Best Practices and Tips
+
+
+Understand Deployment Strategies:
+Choose the right deployment strategy (in-place or blue/green) based on your application's needs and the criticality of uninterrupted service.
+
+Automate and Secure:
+Use IAM roles and instance profiles to automate access management securely. Keep your CodeDeploy agent updated for the best performance and security.
+
+Monitor and Log:
+Utilize AWS services like CloudWatch to monitor deployments and log activities for future reference and troubleshooting.
+
+Practice Rollbacks:
+Be familiar with the rollback features of CodeDeploy to quickly revert to previous versions in case of deployment failure.
+
+
+
+Keep these notes as a reference to ensure a smoother and more effective deployment process using AWS CodeDeploy. Practice with real-world scenarios and keep exploring additional features and integrations for comprehensive deployment solutions.
+
+DEMO: Continuous Deployment with AWS CodePipeline
+Introduction
+
+
+In this demo, we will use CodePipeline to deploy a code maintained in a CodeCommit repository to a single Amazon EC2 instance. The pipeline will be triggered when we push a change to the CodeCommit repository. The pipeline will deploy the changes to an Amazon EC2 instance using CodeDeploy as the deployment service.
+
+
+
+Let’s begin
+Our pipeline will have two stages.
+
+
+
+A source stage for CodeCommit.
+
+A deployment stage for CodeDeploy.
+
+
+
+We will divide this whole demo into tasks. Let’s start with the first task.
+
+
+
+Task 1: Create a CodeCommit repository
+
+
+Let us first create a CodeCommit repository. Our pipeline will get its source code from this repository when it runs. We will also create a local repository where we will maintain and update code before we push it to the CodeCommit repository.
+
+
+
+Go to the CodeCommit console.
+
+
+
+Select the preferred region in which we want to create the repository form the ‘Region selector’ menu.
+
+
+
+Click on ‘Create Repository’
+
+
+
+On the Create repository page, in Repository name, let’s give a name to our repository as ‘MyDemoRepo’.
+
+
+
+Leave the rest of the options as it is.
+
+
+
+Click on the ‘Create’ button.
+
+
+
+Now, let us create a local repository on our local machine.
+
+On the newly created repository page, choose Clone URL on the top right of the page, and then choose Clone SSH. This will copy the address to clone your Git repository to the clipboard.
+
+
+
+Please refer to the demo video of CodeCommit chapter where we learnt how to connect CodeCommit repository to local machine using SSH. We have to first generate SSH public-private key pair, edit the local ssh configuration file and then clone the repository.
+
+
+
+Let me open a command line terminal.
+
+
+
+We will navigate to a local directory, we will use this directory to store the local repository. For this demo I will use the /tmp directory.
+
+
+
+Now we will clone the CodeCommit repository to our local directory using the following command.
+
+
+
+$ git clone ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo
+
+
+
+We will replace the ssh address with the one that we just copied from the CodeCommit repository console.
+
+
+
+When we run the git clone command with this URL, Git will initiate a secure connection to the specified AWS CodeCommit repository and create a local copy of "MyDemoRepo" on our local machine.
+
+
+
+Task 2: Add sample code to CodeCommit repository
+I have sample code for this demo. You can download it here.
+
+
+
+This sample code contains index.html, appspec.yml, license.txt, shell scripts files such as install_dependencies, start_server, and stop_server shell scripts.
+
+
+
+Unzip the sample code file in the local directory ‘MyDemoRepo’ that we created earlier.
+
+
+
+The file hierarchy should look like this.
+
+
+
+/tmp
+
+└-- MyDemoRepo
+
+│-- appspec.yml
+
+│-- index.html
+
+│-- LICENSE.txt
+
+└-- scripts
+
+│-- install_dependencies
+
+│-- start_server
+
+└-- stop_server
+
+
+
+Now we will upload the sample code files to CodeCommit.
+
+We have two methods to do this.
+
+
+
+We can upload through the CodeCommit console and Choose the Add file option to upload all the files.
+
+
+
+Else we can use the push command.
+
+
+
+Both the methods were explained in the CodeCommit chapters. Please refer to recap the methods.
+
+
+
+In this demo, I will use the push command to upload the files to CodeCommit repository.
+
+
+
+Ensure that you are in the MyDemoRepo directory, we will execute the commands by being in this directory.
+
+
+
+$ git add -A
+
+
+
+This command is used in Git to stage all changes in your working directory for the next commit.
+
+
+
+$ git commit -m "Add sample application files"
+
+
+
+With this command, we have committed the changes. Remember you might be asked to enter author identity details while executing this command.
+
+
+
+So use the below git config commands.
+
+git config --global user.email “you@example.com”
+
+git config --global user.name “your name”
+
+
+
+Then run the push command.
+
+$ git push
+
+
+
+With this command, all the sample code files are now available in the main branch in the CodeCommit repository MyDemoRepo. We can use these files for our pipeline now.
+
+
+
+Task 3: Create an Amazon EC2 Linux instance and install the CodeDeploy agent
+
+
+We need an Amazon EC2 instance to deploy the sample application. We also learnt in the CodeDeploy chapter that a CodeDeploy agent is necessary to be installed in the EC2 instance to establish communication with AWS CodeDeploy to receive the deployment instructions.
+
+
+
+We will have to attach policies that allow the EC2 instance to fetch files that the CodeDeploy agent uses to deploy our application and to allow the instance to be managed by SSM.
+
+
+
+So let’s get all these settings done.
+
+
+
+First we will create the instance role.
+
+
+
+Go to the IAM console and click on Roles, choose Create Role.
+
+
+
+Under Select type of trusted entity, choose ‘AWS service’.
+
+
+
+Under Use case, select EC2.
+
+
+
+Under ‘Choose a use case for the specified service’, choose EC2.
+
+
+
+Click Next.
+
+Let’s add permissions now.
+
+
+
+Look for the policy name AmazonEC2RoleforAWSCodeDeploy and AmazonSSMManagedInstanceCore in the list and select both one by one.
+
+
+
+The policy AmazonEC2RoleforAWSCodeDeploy grants the necessary permissions to EC2 instances to work with AWS CodeDeploy, allowing them to perform actions like fetching and deploying application revisions, interacting with deployment groups, and more
+
+
+
+The AmazonSSMManagedInstanceCore policy is an AWS managed policy that grants the necessary permissions to perform basic actions related to AWS Systems Manager on EC2 instances.
+
+
+
+Click on the Next button.
+
+
+
+Give a name to this role, let’s name it as EC2InstanceRole.
+
+
+
+We can see both the policy permissions are attached to this role.
+
+
+
+Now click on Create role and finish the role creation process.
+
+
+
+Now we are good to launch Amazon EC2 instance.
+
+
+
+Go to EC2 console.
+
+
+
+Click on Launch instance, let’s name our instance as MyCodePipelineDemo. Click on ‘additional tags’ button, you will see the key-value pair automatically given to this instance. CodeDeploy selects instances to deploy based on the tags.
+
+
+
+Under Application and OS Images (Amazon Machine Image), select the Amazon Linux with AMI description ‘Amazon Linux 2 Kernel 5.10 AMI 2.0.20230822.0 x86_64 HVM gp2’.
+
+
+
+Under instance type, select t2.micro.
+
+Under Key pair (login), choose a key pair or create one.
+
+
+
+You can also choose Proceed without a key pair.
+
+
+
+Under Network settings, Enable ‘Auto-assign Public IP’.
+
+
+
+Next to Assign a security group, choose Create a new security group.
+
+
+
+In the Inbound security group rules, choose SSH under Type and choose My IP under Source type.
+
+
+
+We have to add one more security group rule, click on the ‘Add security group rule’ button. Choose HTTP under Type, and then under Source type, choose My IP.
+
+
+
+Keep the ‘Configure storage’ settings default.
+
+
+
+Expand ‘Advanced details’, and select the IAM role EC2InstanceRole that we created in the earlier step.
+
+
+
+Under Summary, under Number of instances, enter 1.
+
+
+
+Click on ‘Launch instance’.
+
+
+
+Go to the EC2 console and you can see the instance is launched.
+
+
+
+So till here, we have a repository in CodeCommit, we added a sample code in this repository, we create a EC2 instance and a IAM role for EC2 instance.
+
+
+
+Our next step is to create an application for CodeDeploy.
+
+Task 4: Create an application in CodeDeploy
+
+
+We learnt in the CodeDeploy chapter, an "application" refers to a logical container for the code and artifacts that we want to deploy to one or more deployment groups. Applications help us organize and manage our deployment process by grouping related code and resources together.
+
+
+
+In this task, the very first step is to create an IAM role that allows CodeDeploy to perform the deployments. After this we will create the application.
+
+
+
+From the console dashboard, choose.
+
+Choose Roles in the IAM console and click on the Create role button.
+
+
+
+Under Select trusted entity, choose AWS service. Under Use case, choose CodeDeploy. Choose CodeDeploy from the options listed. Choose Next. Go to the IAM console and click on Roles, choose Create Role.
+
+
+
+Under Select type of trusted entity, choose ‘AWS service’.
+
+
+
+Under Use case, select CodeDeploy.
+
+
+
+Under ‘Choose a use case for the specified service’, choose CodeDeploy.
+
+
+
+Click Next.
+
+
+
+The AWSCodeDeployRole managed policy is already attached to the role.
+
+Click on the Next button.
+
+Give a name for the role, let’s name it as CodeDeployRole and then complete the process of role creation by clicking on the Create role button.
+
+
+
+Now let’s create the application for CodeDeploy.
+
+
+
+Go to the CodeDeploy console.
+
+
+
+Click on Applications from the left navigation menu. Now click on the Create application button. Give a name to the application as MyDemoApplication. In Compute Platform, choose EC2/On-premises.
+
+
+
+Then click on the Create application button.
+
+
+
+Now we need to create a deployment group. We know that a "deployment group" is a logical collection of Amazon EC2 instances or other deployment targets where we want to deploy our application. Deployment groups allow us to define the set of target resources that will receive updates during a deployment.
+
+
+
+On the same page of the MyDemoApplication console, click on the Create deployment group button. Then give a name to this group as MyDemoDeploymentGroup under Deployment group name. Under Service role, choose the IAM service role CodeDeployRole that we created earlier in this step.
+
+
+
+Under Deployment type, choose In-place.
+
+
+
+Under Environment configuration, choose Amazon EC2 Instances.
+
+
+
+Remember we had given a key-value pair to this EC2 instance as Name-MyCodePipelineDemo, ensure you choose this pair. CodeDeploy uses the key-value pair during the deployment process.
+
+
+
+Under Agent configuration with AWS Systems Manager, choose Now and schedule updates. This installs the agent on the instance. The Linux EC2 instance is already configured with the SSM agent and will now be updated with the CodeDeploy agent.
+
+
+
+Under Deployment configuration, choose CodeDeployDefault.OneAtaTime.
+
+
+
+Under Load Balancer, make sure Enable load balancing is not selected. We do not require a load balancer or target group for this demo.
+
+
+
+Click on the Create deployment group button.
+
+
+
+Now it’s time to create our pipeline in CodePipeline.
+
+
+
+Task 5: Create pipeline in CodePipeline
+Now we will create a pipeline that runs automatically whenever a code is pushed to our CodeCommit repository.
+
+
+
+Go to the CodePipeline console.
+
+
+
+Click on the Create pipeline button.
+
+
+
+Give a name to this pipeline as MyFirstPipeline.
+
+
+
+In Service role, choose New service role to allow CodePipeline to create a service role in IAM.
+
+
+
+Keep the Advanced settings default.
+
+Click on the Next button.
+
+
+
+Now we have to select the Source provider, as we have our sample source code saved in CodeCommit, choose AWS CodeCommit from the drop down list. Enter the name of the CodeCommit repository MyDemoRepo, as it is the master branch - under Branch name, select master.
+
+
+
+Under Change detection options, choose the first option Amazon CloudWatch Events. This option will enable the detection mode to automatically start our pipeline when a change occurs in the source code repository.
+
+
+
+Keep the rest of the settings default.
+
+
+
+Click on the Next button.
+
+
+
+As this demo does not require anything to be build, we will skip this stage. Simply click on the Skip build stage button.
+
+
+
+Accept the warning message by choosing Skip again. Click on the Next button.
+
+
+
+Under Deploy stage, give Deploy provider - as we are using CodeDeploy service for deployment, select AWS CodeDeploy from the dropdown list. Select the correct Application name which is MyDemoApplication and Deployment group which is MyDemoDeploymentGroup.
+
+
+
+Then click on the Next button.
+
+
+
+Then review all the settings and click on the Create pipeline button.
+
+The pipeline starts running after it is created.
+
+
+
+It will first download the sample source code from our CodeCommit repository and create a CodeDeploy deployment to our linux EC2 instance.
+
+
+
+We can view progress, success and failure messages as the CodePipeline sample deploys the webpage to the Amazon EC2 instance in the CodeDeploy deployment.
+
+
+
+So this is the pipeline we created for our demo.
+
+
+
+Let’s check if the pipeline is executed successfully.
+
+
+
+View the initial progress of the pipeline. The status of each stage changes from No executions yet to In Progress, and then to either Succeeded or Failed. The pipeline should complete the first run within a few minutes.
+
+
+
+After Succeeded is displayed for the pipeline status, in the status area for the Deploy stage, choose CodeDeploy. This opens the CodeDeploy console. If Succeeded is not displayed see Troubleshooting CodePipeline.
+
+
+
+On the Deployments tab, choose the deployment ID. On the page for the deployment, under Deployment lifecycle events, choose the instance ID. This opens the EC2 console.
+
+
+
+On the Description tab, in Public DNS, copy the address (for example, ec2-192-0-2-1.us-west-2.compute.amazonaws.com), and then paste it into the address bar of the web browser.
+
+
+
+The web page that we see is for the sample application we downloaded and pushed to our CodeCommit repository.
+
+
+
+Task 6: Modify code in the CodeCommit repository
+Our pipeline is configured to run whenever code changes are made to our CodeCommit repository. So now we will make changes to the HTML file that is part of the sample CodeDeploy application in the CodeCommit repository.
+
+
+
+When we push these changes, our pipeline runs again, and the changes we make are visible at the web address we accessed earlier.
+
+
+
+So go to the command prompt terminal.
+
+
+
+Go to the directory MyDemoRepo using the cd command.
+
+
+
+Use the vim text editor to edit the index.html file.
+
+
+
+Make some changes to this html file. Let’s change the title from Sample Deployment to Updated Deployment.
+
+Use the :wq key combination to save and exit the html file.
+
+
+
+Commit the changes.
+
+
+
+$ git commit -am "Updated sample application files"
+
+
+
+This command is a Git command used to commit changes to a Git repository along with a commit message.
+
+
+
+git commit: This part of the command tells Git that you want to create a new commit. A commit in Git is like a snapshot of our code at a specific point in time. It represents a set of changes that we want to save permanently in the Git history.
+
+
+
+-a: The -a flag is short for "all." When we use -a with git commit, it tells Git to automatically stage (add to the staging area) all the changes in our working directory that have been modified or deleted. It's a convenient way to commit all changes without explicitly using the git add command for each file.
+
+
+
+-m "Updated sample application files": This part of the command is used to provide a commit message.
+
+
+
+After running this command, Git will create a new commit with the changes we have made, along with the provided commit message. The commit will be added to the Git history, allowing us to track the history of changes in our project and enabling us to collaborate with others by sharing our changes through the Git repository.
+
+
+
+Then push the changes to the CodeCommit repository.
+
+$ git push
+
+
+
+Go to CodePipeline console to verify if the pipeline has automatically started or not.
+
+
+
+Check for the progress status of the pipeline. Once Succeeded, refresh the web browser and check if the changes we made are reflected in the website. We will see the updated webpage.
+
+
+
+So that’s how we automated the whole process.
+
+
+
+Task 7: Clean up resources
+Do not forget to delete all the resources once the demo is completed. Delete all the resources from CodeCommit, CodeDeploy, CodePipeline and EC2 console.
+
+Conclusion
+Thus we say how to set up an end-to-end continuous deployment pipeline using various AWS services. By following the steps in this demo, we learnt how code changes made in the CodeCommit repository trigger seamless updates to a live website, showcasing the efficiency and reliability of AWS's deployment and automation capabilities. This demonstration highlights the importance of adopting modern DevOps practices and tools to enhance software development and deployment workflows, enabling organizations to deliver software updates more swiftly and with reduced manual intervention.
+
+Module 15: Continuous Integration with AWS CodePipeline - Summary Notes
+1. AWS CodePipeline Overview:
+Definition: AWS CodePipeline is a continuous integration and continuous delivery (CI/CD) service that automates the build, test, and deploy phases of your release process every time there is a code change.
+
+Purpose: It helps in automating the software release process, allowing you to rapidly release new features and updates.
+
+
+
+2. Core Components of AWS CodePipeline:
+Pipelines: The overall workflow that includes all the stages from source to deployment.
+
+Stages: Logical units within a pipeline representing a phase of the release process (e.g., Build, Test, Deploy).
+
+Actions: Specific tasks performed in each stage (e.g., compiling code, running tests).
+
+Artifacts: Files or set of files created during one stage and used or consumed in subsequent stages.
+
+Transitions: The criteria or rules defining the movement between stages.
+
+
+
+3. Key Terms in AWS CodePipeline:
+Source Revision: Specific version or change in the source code that triggers pipeline execution.
+
+Pipeline Executions: Instances when the pipeline is triggered and runs through its defined stages and actions.
+
+Stage/Action Executions: Tracks the progress and status of each stage and action within the pipeline.
+
+
+
+4. CI/CD in AWS CodePipeline:
+Continuous Integration (CI): Regularly merging code changes into a central repository followed by automated builds and tests.
+
+Continuous Delivery (CD): Ensuring that code changes are automatically built, tested, and prepared for a release to production.
+
+Continuous Deployment: Further extension where every change passing the pipeline is automatically deployed to production.
+
+
+
+5. Benefits of AWS CodePipeline:
+Accelerated Time to Market: Automates release processes, reducing manual effort and speeding up delivery.
+
+Increased Productivity: Allows developers to focus on coding by automating build, test, and deployment tasks.
+
+Better Collaboration: Provides visibility and coordination across development, testing, and operations teams.
+
+Increased Visibility: Offers real-time status updates and notifications for the release process.
+
+Flexibility: Integrates with a wide range of AWS services and third-party tools.
+
+Cost-Effective: Pay-as-you-go pricing model, only paying for what you use.
+
+
+
+6. Security Best Practices in AWS CodePipeline:
+Least Privilege Principle: Grant only the minimum privileges necessary for users or roles managing the pipeline.
+
+Multi-Factor Authentication (MFA): Enable MFA for additional security layer.
+
+Encryption: Use AWS KMS for key management and encrypt data at rest and in transit.
+
+AWS Security Services: Utilize services like AWS WAF, Shield, and GuardDuty for enhanced security.
+
+
+
+7. Monitoring and Logging:
+Amazon CloudWatch: Use for monitoring pipeline performance and setting alarms.
+
+Logging: Ensure detailed logging is enabled for tracking events and errors in the pipeline.
+
+
+
+8. Implementing AWS CodePipeline:
+Familiarize yourself with AWS services that integrate with CodePipeline (e.g., CodeCommit, CodeBuild, CodeDeploy).
+
+Understand how to structure and configure your pipeline according to your development, testing, and deployment needs.
+
+Regularly review and update pipeline configurations to adhere to evolving project requirements and best practices.
+
+
+
+Print and keep these notes handy as a quick reference guide when working with AWS CodePipeline to ensure a streamlined and secure CI/CD process in your software development lifecycle.
+
+Module 16: Exploring Other AWS Developer Options - Summary Notes
+1. Amazon Corretto Overview:
+Definition: Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK).
+
+Usage: It is used for Java development and provides long-term support, including performance enhancements and security fixes.
+
+Benefits: Compatibility with Java SE, performance optimization, stability, security, and long-term support.
+
+
+
+2. AWS CodeArtifact Overview:
+Definition: AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations to store, publish, and share software packages.
+
+Functionality: It acts like a digital library for developers to store and share their code pieces securely and efficiently.
+
+Features: Supports assets, domains, repositories, packages, package namespaces, versioning, and upstream repositories.
+
+
+
+3. AWS CodeStar Overview:
+Definition: AWS CodeStar is a fully managed service that makes it easier for developers to quickly develop, build, and deploy applications on AWS.
+
+Benefits: Simplifies project creation, enhances team collaboration, offers a unified project dashboard, integrates with AWS services, and provides ready-made templates.
+
+
+
+Key Concepts:
+
+
+1. Amazon Corretto:
+Installation: Install on local machines to run and develop Java applications.
+
+Use Cases: Ideal for running Java applications on various platforms, ensuring high performance and long-term support.
+
+
+
+2. AWS CodeArtifact:
+Assets: Specific software components stored within a package.
+
+Domain: Highest level organizational unit grouping related repositories.
+
+Repository: Houses software packages and versions.
+
+Package: Collection of related assets representing software applications or libraries.
+
+
+
+3. AWS CodeStar:
+Project Creation: Utilize templates for rapid project setup.
+
+Team Management: Assign roles and manage access efficiently.
+
+Unified Dashboard: Monitor updates and project status.
+
+Integrated Toolchain: Seamless integration for continuous development, build, and deployment.
+
+
+
+Best Practices:
+
+
+1. Amazon Corretto:
+Regularly update to the latest version for performance and security enhancements.
+
+Leverage Corretto's long-term support for sustained application performance.
+
+
+
+2. AWS CodeArtifact:
+Organize packages using namespaces and versions for better management.
+
+Securely connect to upstream repositories for consistent package retrieval.
+
+
+
+3. AWS CodeStar:
+Use the project dashboard to keep all stakeholders informed.
+
+Regularly review and optimize the continuous integration/continuous deployment (CI/CD) pipeline for efficiency.
+
+
+
+Understanding these services is crucial for any developer looking to leverage AWS for application development and deployment. Amazon Corretto offers a robust and secure environment for Java applications. AWS CodeArtifact simplifies the management and sharing of software packages, and AWS CodeStar provides a comprehensive solution to develop, build, and deploy applications swiftly and collaboratively. By utilizing these tools, developers can ensure a more streamlined and efficient workflow, leading to faster and more reliable software delivery.
+
+
+Live Project
+Introduction
+
+
+Welcome guys, we have come all the way till here after learning so many important AWS developer services. Now it’s time to combine our learning and use all the AWS services to develop a project as a whole.
+
+
+
+In this section we will create a web application from scratch and develop a CICD pipeline for this web application.
+
+
+
+Ready? Let’s begin.
+
+
+
+Overview of Project
+In this project, we will build and deploy a simple Java web application using the AWS Developer services. We will use AWS CodeCommit as a Git repository to store our code and AWS CodeArtifact to manage software packages. We will use AWS CodeBuild to compile the Java application, and AWS CodeDeploy to deploy the application to an EC2 web server. AWS CodePipeline will help orchestrate and help us automate the entire process.
+
+
+
+
+
+You can use an AWS free-tier account to carry out this project.
+
+
+
+Perform the steps simultaneously while learning through the document.
+
+
+
+Understand the various code and scripts used for this project. Detailed explanation is provided wherever necessary.
+
+
+
+Our end result of this project will look like this.
+
+
+
+
+
+Let’s Begin
+Let’s divide the whole project into smaller parts and execute step by step.
+
+
+
+Task 1: Set up AWS Cloud Environment using AWS Cloud9
+AWS Cloud9 is a cloud-native integrated development environment (IDE) that empowers you to write, execute, and troubleshoot code directly through your web browser.
+
+
+
+Throughout this workshop, we will leverage AWS Cloud9 for the development of our application code and seamless interaction with Git.
+
+
+
+Log onto the AWS Console.
+
+
+
+Search for Cloud9 and then click Create environment.
+
+
+
+Name the environment UnicornIDE and give a helpful description. In network settings, let’s select the SSH option. We will keep the rest of the settings default. Please remember we had discussed all these options in the AWS Cloud9 chapter earlier.
+
+Click on ‘Create environment’
+
+Open the IDE by clicking on the ‘OPEN’ button.
+
+
+
+This is the AWS Cloud9 Linux environment for our project.
+
+
+
+The file explorer is on the left side, and terminal prompt at the bottom. Within the Cloud9 setup, useful tools like Docker, Git and AWS CLI are preconfigured and ready to use.
+
+
+
+Let’s quickly confirm this using the following commands.
+
+docker –version
+
+git –version
+
+aws –version
+
+
+
+That’s it, our cloud9 development environment is set-up.
+
+
+
+Task 2: Create the web application
+In this project we are creating a simple Java web application using Apache Maven build tool. Apache Maven is a popular build automation and project management tool primarily used in the Java software development projects. Its main purpose is to automate the process of building software projects. It manages the compilation of source code, packaging of artifacts such as JAR files, running tests, and producing distributable formats such as JAR and WAR files). This automation simplifies and standardizes the build process, reducing the potential for errors.
+
+
+
+So our step in task 2 is to download this build automation tool from the public repository. We will use the ‘wget’ command to download the Apache Maven repository from the Internet.
+
+
+
+$ sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+
+
+
+Let me explain this command.
+
+
+
+sudo: It's the command used to execute the following command as the superuser or with administrative rights.
+
+
+
+wget: This is the command-line utility for downloading files from the internet. In our case, we are using it to fetch a file from the specified URL of Apache Maven public repository.
+
+
+
+https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo: This is the URL of the file that the wget command is instructed to download. It's a repository configuration file for Apache Maven.
+
+
+
+-O /etc/yum.repos.d/epel-apache-maven.repo: The -O option specifies the location and name to save the downloaded file. In this case, it's instructing wget to save the downloaded repository configuration file as /etc/yum.repos.d/epel-apache-maven.repo. The /etc/yum.repos.d directory is commonly used for storing repository configuration files on Linux systems. These files are used by package managers like yum to determine where to download software packages.
+
+
+
+So, in summary, this command downloads a repository configuration file for Apache Maven from a specific URL and saves it as /etc/yum.repos.d/epel-apache-maven.repo with superuser privileges. This file is then used by package management tools to enable the installation of Apache Maven and related packages from this repository.
+
+
+
+Then we will execute the command.
+
+
+
+$ sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+
+
+
+Let me explain this command.
+
+
+
+sudo: This command is used to execute the following command with administrative rights.
+
+
+
+sed: This is a short form of stream editor used to perform text transformations on input data such as a file or data stream and produce modified output. In our context, it's used to edit the contents of a file. sed works by reading one line at a time from its input, applying specified text-editing operations to each line, and then printing the modified lines to standard output. It is often used for tasks such as searching, replacing, inserting, deleting, and modifying text within files.
+
+
+
+It’s syntax is
+
+
+
+sed [OPTIONS] 'COMMAND' [input_file]
+
+
+
+-i: This is a sed option that stands for "in-place." It instructs sed to edit the file directly, without creating a backup or a temporary file. Changes are made directly to the specified file.
+
+
+
+s/\$releasever/6/g: This is the sed command itself, which consists of three parts:
+
+
+
+s: This indicates a substitution operation in sed, where one pattern is replaced with another.
+
+/\$releasever/: This is the pattern to be found in the file. It's looking for the text $releasever. The dollar sign ($) is escaped with a backslash (\) to prevent it from being treated as a special character by sed.
+
+6: This is the replacement text. It's what $releasever will be replaced with.
+
+g: This stands for "global" and means that all occurrences of the pattern in each line of the file should be replaced, not just the first occurrence.
+
+/etc/yum.repos.d/epel-apache-maven.repo: This is the path to the file in which sed will perform the in-place substitution. In our case, it's /etc/yum.repos.d/epel-apache-maven.repo.
+
+
+
+In summary, the command uses sed with sudo privileges to edit the file /etc/yum.repos.d/epel-apache-maven.repo. It replaces all occurrences of the text $releasever with 6 within that file.
+
+
+
+Now that we have downloaded and made the necessary changes in the Apache Maven file, let’s install it in our cloud9 IDE with the following command.
+
+
+
+$ sudo yum install -y apache-maven
+
+
+
+when we run sudo yum install -y apache-maven, you are telling the system to use yum to install Apache Maven without prompting for confirmation.
+
+
+
+After running this command, Apache Maven will be installed on your system, and you can use it to build and manage Java projects.
+
+
+
+We want to have the latest version of Java installed which is Java 8 and more specifically Amazon Correto 8. Amazon Corretto 8 is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK) 8. It is provided and supported by Amazon Web Services (AWS).
+
+
+
+Amazon Corretto 8 is built from the same source code as OpenJDK 8, which means it is fully compatible with Java SE 8 (Java Standard Edition 8). It includes all the features and updates available in Java 8, making it suitable for running Java applications and workloads that depend on this version.
+
+
+
+Amazon Corretto 8 is a good choice for developers and organizations that rely on Java 8 and need a stable, open-source, and well-supported runtime environment. It can be used for a wide range of Java applications, from web services to desktop applications to enterprise solutions.
+
+
+
+So let’s run a few commands to get the latest version of Java and Amazon Correto 8.
+
+
+
+The first command is,
+
+
+
+$ sudo amazon-linux-extras enable corretto8
+
+When we run the sudo amazon-linux-extras enable corretto8 command, we are instructing Amazon Linux to enable the repository that contains Amazon Corretto 8. Enabling the repository makes it possible to install Corretto 8 using the package manager, such as yum, by simply specifying the package name (e.g., sudo yum install java-1.8.0-amazon-corretto). Once enabled, we can then proceed to install and use Amazon Corretto 8 on your Amazon Linux system.
+
+
+
+$ sudo yum install -y java-1.8.0-amazon-corretto-devel
+
+When we run the sudo yum install -y java-1.8.0-amazon-corretto-devel command, we are telling the YUM package manager to install the Amazon Corretto 8 JDK, including development tools, without any prompts. This JDK can be used for developing and running Java applications on your Linux system.
+
+
+
+$ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
+
+When we run the export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64 command, we are essentially telling the shell to set the JAVA_HOME environment variable to the specified path. This allows other programs and scripts to reference the JAVA_HOME variable to determine the location of the Java Development Kit.
+
+
+
+It's worth noting that setting JAVA_HOME is a common practice in Java development to ensure that the correct JDK is used by build tools and applications. Different projects or tools may require different JDK versions, so having JAVA_HOME correctly configured is essential for managing multiple Java installations on a system.
+
+
+
+
+
+$ export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH
+
+When we run the export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH command, we are effectively adding the directory /usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/ to the beginning of the PATH variable. This means that when we enter a command in the shell, the system will first look in this directory to find the corresponding executable. If it doesn't find the executable there, it will continue searching in the other directories listed in the PATH variable.
+
+
+
+This modification of the PATH variable is commonly used to ensure that the correct version of a program or executable is used. In our case, it's used to prioritize the Amazon Corretto 8 Java binaries over any other Java installations that may exist in the system, making it the default Java runtime for your shell session.
+
+
+
+All right, so our build tool is installed properly.
+
+
+
+Let’s create the application now.
+
+
+
+We will use the following command to create the java application.
+
+
+
+$ mvn archetype:generate \
+
+-DgroupId=com.wildrydes.app \
+
+-DartifactId=unicorn-web-project \
+
+-DarchetypeArtifactId=maven-archetype-webapp \
+
+-DinteractiveMode=false
+
+
+
+Let’s understand the command.
+
+
+
+The mvn archetype:generate command is used with Apache Maven, a build automation and project management tool for Java projects, to generate a new Maven project based on a specified archetype.
+
+
+
+mvn: This is the command to run Apache Maven. We must have Maven installed on your system for this command to work. We have already done this step.
+
+
+
+archetype:generate: This is a built-in goal that instructs Maven to generate a new project based on predefined project templates known as "archetypes." These archetypes serve as project templates or blueprints, specifying the project's structure, dependencies, and initial configuration.
+
+
+
+When we execute the archetype:generate goal, Maven presents us with a series of prompts to customize our project, such as providing a groupId (typically an organization's identifier), an artifactId (the project's unique identifier within the group), version numbers, and other project-specific details.
+
+
+
+-DgroupId=com.wildrydes.app: This is a system property (denoted by -D) that sets the groupId for the new Maven project. The groupId is typically a unique identifier for our project's group or organization. In our example, it's set to com.wildrydes.app.
+
+
+
+-DartifactId=unicorn-web-project: This is another system property that sets the artifactId for the new project. The artifactId is a unique identifier for the specific project within the group. In our case, it's set to unicorn-web-project.
+
+
+
+-DarchetypeArtifactId=maven-archetype-webapp: This property specifies the archetype to use for generating the project. In our example, it's set to maven-archetype-webapp, which is a predefined Maven archetype for creating web application projects. This archetype sets up a basic web project structure.
+
+
+
+-DinteractiveMode=false: This property disables interactive mode, meaning that Maven won't prompt us for input during project generation. Instead, it will use the values provided for groupId, artifactId, and archetype.
+
+
+
+When we run this mvn archetype:generate command, Maven will use the specified archetype (maven-archetype-webapp) to create a new Maven project with the following characteristics:
+
+
+
+Group ID: com.wildrydes.app
+
+Artifact ID: unicorn-web-project
+
+Project type: Web application
+
+
+
+Maven will generate the project structure and necessary configuration files based on the archetype, allowing us to start developing our web application using Maven as our build and dependency management tool. This is a common way to kickstart a new Java web project using Maven.
+
+
+
+That’s how we create a Java web application using the Maven build tool. Now let’s check project structure and necessary configuration files that are generated.
+
+
+
+We will have to check the index.jsp and pom.xml files.
+
+
+
+We have to modify these files to suit our website. Let us access these files through the Cloud9 console from this left panel. Let us put a few sentences in this code. Open the index.jsp file.
+
+
+
+<html>
+
+<body>
+
+<h2>Hello Unicorn World!</h2>
+
+<p>This is my new version of the Wild Rydes application!</p>
+
+</body>
+
+</html>
+
+
+
+All right guys, so now the Java source code for our web application is ready. Remember this source code is right now in the cloud9 environment, which means it is in the EC2 instance that it generated for the cloud9 environment. So we can consider it to be similar to a local machine.
+
+
+
+So our next step is to store this Java source code in AWS cloud. We have to move this source code from the EC2 instance to a cloud based Git repository like AWS CodeCommit.
+
+
+
+That’s where our next task starts.
+
+
+
+Task 3: Create repository using AWS CodeCommit
+We have discussed the AWS CodeCommit at length in the previous chapters. So let’s use that knowledge and create a CodeCommit repository to store our Java source code.
+
+
+
+Log into the AWS Console and search for the CodeCommit service.
+
+
+
+Click Create repository. Name it unicorn-web-project and give it a description. Also add a tag with key team and value devops.
+
+
+
+Click Create.
+
+
+
+On the next page select Clone URL and Clone HTTPS. This will copy the repository URL to the clipboard.
+
+
+
+https://git-codecommit.<region>.amazonaws.com/v1/repos/<project-name>
+
+
+
+Repository is created.
+
+
+
+We need to set up Git credentials, so that we can push the Java source code from the Cloud9 environment to the CodeCommit repository. Let’s do this.
+
+
+
+Go to the Cloud9 environment to set up our Git identity.
+
+
+
+git config --global user.name "<your name>"
+
+git config --global user.email <your email>
+
+Let’s ensure we are in the ~/environment/unicorn-web-project.
+
+
+
+cd ~/environment/unicorn-web-project
+
+
+
+Let’s initialise a new Git repository in the unicorn-web-project directory and set up the initial branch as "main." Git is a version control system that allows you to track changes in your project's source code and collaborate with others.
+
+
+
+git init -b main
+
+
+
+Now let’s configure a remote connection to the AWS CodeCommit repository ‘unicorn-web-project’ that we just created.
+
+
+
+git remote add origin <HTTPS CodeCommit repo URL>
+
+
+
+This command sets up a link between our local Git repository in the unicorn-web-project directory in cloud9 environment and the remote CodeCommit repository, allowing us to push and pull code between our local repository and the remote one hosted on AWS.
+
+
+
+So after running these commands, our unicorn-web-project directory in cloud9 environment will be initialized as a Git repository, and we will be able to use Git to track changes in our project's Java source code. The remote "origin" will be configured to point to our AWS CodeCommit repository, enabling us to push our code to AWS CodeCommit for secure version control and collaboration.
+
+
+
+Now this is all set, let’s commit and push the code.
+
+
+
+git add *
+
+This command stages all the changes (new files, modified files, and deleted files) in the current directory for the next commit. After running this command, Git will be aware of the changes, but they have not yet been permanently recorded in the repository.
+
+
+
+git commit -m "Initial commit"
+
+This command creates a new commit that includes all the changes we previously staged with git add *. We will provide a commit message "Initial commit" just to explain that this is the first commit in the repository.
+
+
+
+git push -u origin main
+
+This command pushes our local commits to the "main" branch of the remote repository in CodeCommit named "origin." Once pushed, our changes are available in the remote CodeCommit repository for collaboration with others or for backup and version control.
+
+
+
+So in short, we started tracking changes in a local Git repository, created an initial commit with a commit message, and pushed that commit to a remote CodeCommit repository, and set up the main branch to track the remote CodeCommit main branch for future pushes and pulls.
+
+
+
+So now we have a working CodeCommit repository to store and version control our Java source code.
+
+
+
+Now it's time to convert this Java source code into a deployable format. Let’s see how AWS CodeArtifact will help us in this process.
+
+
+
+Task 4: Setup AWS CodeArtifact repository
+We discussed AWS CodeArtifact in the previous chapters. It is a fully managed artifact repository service that organizations of any size can use to securely fetch, store, publish, and share online software packages used in their software development process.
+
+
+
+In our project we are going to create one such CodeArtifact repository. We will store a few online software packages that we may require while building the Java web application. We will make this CodeArtifact repository a private repository and make it available to this project and if required for any other future projects that we intend to build. We could have used the online software packages directly for building our project. However, many times such public repositories can become unavailable for unknown reasons. In such cases, having our own repository to store such packages will ensure that our build processes are not hampered. In case the public repository experiences an outage, it can lead to a break in the complete CI/CD pipeline. So storing the necessary packages in CodeArtifact is the secured solution.
+
+
+
+So let’s create a domain and a repository in the AWS CodeArtifact console.
+
+
+
+4.1 Create CodeArtifact domain and repository
+
+
+Go to the AWS CodeArtifact console.
+
+
+
+Select Domains in the menu on the left navigation panel, then click on Create domain. Name it as unicorns and choose "Create domain" to finish the domain setup.
+
+
+
+Now, click in Create repository to create a repository for this new domain. Name it unicorn-packages and write a description. Select maven-central-store from the drop-down list as public upstream repository and click on Next.
+
+
+
+Review the settings once.
+
+
+
+You will see a Package flow diagram. Let’s understand this.
+
+It shows the creation of two repositories in the process, the primary unicorn-packages repository and an intermediary upstream repository named maven-central-store, bridging to the public repository, maven-central.
+
+
+
+Click on "Create repository" to complete the procedure.
+
+
+
+4.2 Connecting to CodeArtifact repository
+Now it’s time to connect our Java source code to this CodeArtifact repository.
+
+
+
+On the next page, click View connection instructions. In the dialog, choose Mac & Linux for Operating system and mvn as package manager.
+
+As our code is Java based, we have to use the Maven package which is denoted by mvn.
+
+
+
+During the build process, the Java web application has to access the CodeArtifact domain and the repository. To ensure this access is smooth, we have to obtain an AWS CodeArtifact authorization token and set it as an environment variable named CODEARTIFACT_AUTH_TOKEN.
+
+
+
+We will use the following command.
+
+
+
+$ export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain unicorns --domain-owner 123456789012 --query authorizationToken --output text`
+
+
+
+Let’s quickly understand the working of this command.
+
+
+
+export: This Linux shell command to create and assign values to environment variables. In our case, it's used to set an environment variable.
+
+
+
+CODEARTIFACT_AUTH_TOKEN: This is the name of the environment variable being created. It will hold the AWS CodeArtifact authorization token.
+
+
+
+`` (backticks): These are used to execute a subcommand within the main command and capture its output. In our case, it's used to execute the AWS CLI command enclosed within backticks and assign its output to the CODEARTIFACT_AUTH_TOKEN environment variable.
+
+
+
+aws codeartifact get-authorization-token: This is an AWS CLI command for AWS CodeArtifact. It is used to retrieve an authorization token for accessing an AWS CodeArtifact domain.
+
+
+
+--domain unicorns: This specifies the CodeArtifact domain named "unicorns" from which to obtain the authorization token.
+
+
+
+--domain-owner 123456789012: This specifies the owner (AWS account ID) of the CodeArtifact domain. Replace "123456789012" with the actual AWS account ID.
+
+
+
+--query authorizationToken: This is a query parameter used to extract the "authorizationToken" field from the output of the aws codeartifact get-authorization-token command.
+
+
+
+--output text: This specifies the output format of the AWS CLI command as plain text, which ensures that the authorization token is returned in a format that can be easily assigned to an environment variable.
+
+
+
+In a nutshell, this command retrieves an AWS CodeArtifact authorization token for a specific CodeArtifact domain and domain owner, extracts the token from the command's output, and assigns it to the CODEARTIFACT_AUTH_TOKEN environment variable. This authorization token can then be used to authenticate and access AWS CodeArtifact repositories or resources within that domain.
+
+
+
+Once we authorize this, we have to update the settings.xml file. We have to create this file. Let’s do this in the Cloud9 terminal using the following commands.
+
+
+
+cd ~/environment/unicorn-web-project
+
+Go to the unicorn-web-project directory and create the file.
+
+
+
+echo $'<settings>\n</settings>' > settings.xml
+
+When we run this command, it will create a file named settings.xml in the current directory and populate it with the following content.
+
+
+
+<settings>
+
+</settings>
+
+
+
+We have to write a certain code in between this XML structure.
+
+
+
+Now open the settings.xml file in the Cloud9 directory tree and follow the remaining steps in the Connection instructions dialog in the CodeArtifact console including the mirror section.
+
+Write the following code in between the <settings></settings>.
+
+
+
+<settings>
+
+<profiles>
+
+<profile>
+
+<id>unicorns-unicorn-packages</id>
+
+<activation>
+
+<activeByDefault>true</activeByDefault>
+
+</activation>
+
+<repositories>
+
+<repository>
+
+<id>unicorns-unicorn-packages</id>
+
+<url>https://unicorns-123456789012.d.codeartifact.us-east-2.amazonaws.com/maven/unicorn-packages/</url>
+
+</repository>
+
+</repositories>
+
+</profile>
+
+</profiles>
+
+<servers>
+
+<server>
+
+<id>unicorns-unicorn-packages</id>
+
+<username>aws</username>
+
+<password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+
+</server>
+
+</servers>
+
+<mirrors>
+
+<mirror>
+
+<id>unicorns-unicorn-packages</id>
+
+<name>unicorns-unicorn-packages</name>
+
+<url>https://unicorns-123456789012.d.codeartifact.us-east-2.amazonaws.com/maven/unicorn-packages/</url>
+
+<mirrorOf>*</mirrorOf>
+
+</mirror>
+
+</mirrors>
+
+</settings>
+
+
+
+This code is an XML configuration file for configuring Maven.
+
+Let's break down the key sections and elements within this XML file.
+
+
+
+<profiles>: This section allows you to define profiles, which are sets of configuration settings that can be activated under specific conditions. In this case, a profile with the ID "unicorns-unicorn-packages" is defined.
+
+
+
+<activation>: This subsection specifies activation criteria. <activeByDefault>true</activeByDefault> means that this profile is active by default.
+
+
+
+<repositories>: This subsection allows you to define repositories for this profile. It includes a repository with the ID "unicorns-unicorn-packages" and a URL pointing to an AWS CodeArtifact repository.
+
+
+
+<servers>: This section is used to configure authentication information for accessing remote repositories or servers. In this case, a server with the ID "unicorns-unicorn-packages" is defined.
+
+
+
+<username>: This element specifies the username used for authentication, which is "aws."
+
+
+
+<password>: This element specifies the password used for authentication. Notably, it uses ${env.CODEARTIFACT_AUTH_TOKEN}, which suggests that the password is dynamically retrieved from an environment variable named CODEARTIFACT_AUTH_TOKEN.
+
+
+
+<mirrors>: This section allows you to configure mirror repositories, which can be used to redirect requests to different repository URLs.
+
+
+
+<mirror>: A mirror with the ID "unicorns-unicorn-packages" is defined.
+
+
+
+<name>: This element provides a name for the mirror.
+
+
+
+<url>: This specifies the URL of the mirror, which is pointing to the same AWS CodeArtifact repository.
+
+
+
+<mirrorOf>: The "mirrorOf" element indicates which requests should be mirrored. In this case, * means that all requests will be mirrored to this repository.
+
+
+
+Overall, this XML configuration file is used to set up Maven-specific settings for accessing and authenticating with our AWS CodeArtifact repository "unicorns-unicorn-packages." It ensures that the necessary repositories, servers, and mirrors are configured correctly for Maven to work with the specified AWS resources.
+
+
+
+Ensure to type in the correct URL in the above script.
+
+
+
+4.3 Compile and Test in Cloud9
+
+
+Now it’s time to verify if the application executes in the cloud9 environment. We have to use the Maven package command mvn.
+
+
+
+mvn -s settings.xml compile
+
+
+
+When we run this command, Maven will use the custom settings from "settings.xml" for configuration. It will execute the "compile" goal, which involves compiling the Java source code of the project according to the project's configuration and dependencies.
+
+
+
+mvn: This is the Maven command used to execute Maven goals and tasks. It is followed by one or more arguments that specify what Maven should do.
+
+
+
+-s settings.xml: This is an option (or flag) used with the mvn command to specify the location of the settings file to be used for the build. In this case, it tells Maven to use the custom settings file named "settings.xml" instead of the default settings.
+
+
+
+compile: This is the goal or phase that Maven is instructed to execute. The "compile" phase is a common Maven goal used to compile the source code of a project. During this phase, Java source code files (usually located in the "src/main/java" directory) are compiled into bytecode class files.
+
+
+
+This command is instructing Maven to perform the "compile" phase while using a custom settings file named "settings.xml."
+
+
+
+Execute the mvn command.
+
+
+
+If the build is successful, go back to the CodeArtifact console and refresh the page of the unicorn-packages repository. Here you will see the packages that are used during the build in the artifact repository. This means that they were downloaded from the public repository and are now available as a copy inside our CodeArtifact repository.
+
+
+
+So, now we have the necessary online software packages in our private CodeArtifact repository for all our future build projects.
+
+
+
+
+
+4.4 IAM Policy to access CodeArtifact
+However, for the projects to access and use these CodeArtifact packages, we have to define a IAM policy. So whenever any services need to access the contents of this CodeArtifact repository, we can simply attach this IAM policy to that particular service.
+
+
+
+Go to IAM console and click Policies in the menu.
+
+
+
+Click Create policy and select the JSON tab. Use the following policy code. This will ensure that other services such as CodeBuild will be able to read the packages in our CodeArtifact repository.
+
+
+
+{
+
+"Version": "2012-10-17",
+
+"Statement": [
+
+{
+
+"Effect": "Allow",
+
+"Action": [ "codeartifact:GetAuthorizationToken",
+
+"codeartifact:GetRepositoryEndpoint",
+
+"codeartifact:ReadFromRepository"
+
+],
+
+"Resource": "*"
+
+},
+
+{
+
+"Effect": "Allow",
+
+"Action": "sts:GetServiceBearerToken",
+
+"Resource": "*",
+
+"Condition": {
+
+"StringEquals": {
+
+"sts:AWSServiceName": "codeartifact.amazonaws.com"
+
+}
+
+}
+
+}
+
+]
+
+}
+
+
+
+This IAM policy code allows specific actions related to AWS CodeArtifact, such as getting authorization tokens and reading from repositories, and it further restricts the use of sts:GetServiceBearerToken to the AWS CodeArtifact service. The "Resource": "*" in both statements means these permissions apply globally across all AWS resources.
+
+
+
+Click on Next. Tags and then Review.
+
+
+
+Name the policy codeartifact-unicorn-consumer-policy and provide a meaningful description such as "Provides permissions to read from CodeArtifact".
+
+
+
+Click on Create policy.
+
+
+
+So now we have CodeArtifact’s working repositories that can be used by other services. Our next step is to create a deployable Java file using AWS CodeBuild.
+
+
+
+Task 5: Build Java deployable file using AWS CodeBuild
+Now we will build a AWS CodeBuild project and convert the Java source code into a deployable file called Java Web Application Archive (WAR) file. We have already discussed what a WAR file is and why we need to create this in the build phase. Do refer to the AWS CodeBuild chapter to revise the concept.
+
+
+
+We know that the build process generates output artifacts and we need a place to store these files. So we will create an Amazon S3 bucket.
+
+
+
+5.1: Create Amazon S3 bucket to store output artifacts.
+Go to Amazon S3 console and click on ‘Create Bucket’ and give the bucket a unique name e.g. unicorn-build-artifacts-12345.
+
+
+
+Keep all other options as default and click on Create bucket.
+
+
+
+5.2: Create AWS CodeBuild project
+Go to the AWS CodeBuild console.
+
+
+
+Under build projects select Create build project.
+
+
+
+Name the project unicorn-web-build and give a meaningful description. Below Additional configuration, add a tag with key team and value devops.
+
+
+
+Under source select AWS CodeCommit as the source provider and select the unicorn-web-project as the repository. The branch should be main with no Commit ID.
+
+
+
+Under environment choose to use a Managed image and set the following details.
+
+Operating System = Amazon Linux 2
+
+Runtime = Standard
+
+Image = aws/codebuild/amazonlinux2-x86_64-standard:3.0
+
+Image version = Always use the latest image for this runtime version
+
+Environment Type = Linux
+
+
+
+Select New service role and leave the Role name as default.
+
+
+
+Under Buildspec let’s leave the default option to Use a buildspec file. We discussed in earlier chapters that the buildspec file contains the instructions to carry out the build process. With this default option CodeBuild will look for this buildspec.yml. We will create this file in later sections of this project.
+
+
+
+Next under the ‘Artifacts’ section select Amazon S3 and choose the bucket name we created earlier. Type name as unicorn-web-build.zip. Let’s leave the other options as default. Ensure the artifact packaging is set to Zip.
+
+
+
+Under ‘Logs’ enable CloudWatch logs. Set the group name to unicorn-build-logs and the stream name to webapp. This setting will allow us to track the output of our build process in CloudWatch Logs.
+
+
+
+Click on create build project to complete the CodeBuild settings.
+
+5.3 Create buildspec.yml file
+We know that the buildspec.yml file has to be created at the root directory of the project folder. Let’s go back to Cloud9 terminal.
+
+
+
+Navigate to ~/environment/unicorn-web-project/ folder and create a new file called buildspec.yml. Ensure that this name matches the name we entered in the CodeBuild console. Following is the code to be written in the buildspec.yml file. Make sure to replace the domain-owner account ID with your own account ID.
+
+
+
+version: 0.2
+
+
+
+phases:
+
+install:
+
+runtime-versions:
+
+java: corretto8
+
+pre_build:
+
+commands:
+
+- echo Initializing environment
+
+- export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain unicorns --domain-owner 123456789012 --query authorizationToken --output text`
+
+build:
+
+commands:
+
+- echo Build started on `date`
+
+- mvn -s settings.xml compile
+
+post_build:
+
+commands:
+
+- echo Build completed on `date`
+
+- mvn -s settings.xml package
+
+artifacts:
+
+files:
+
+- target/unicorn-web-project.war
+
+discard-paths: no
+
+
+
+Let’s quickly understand what exactly this file does in the build process.
+
+
+
+version: This specifies the version of the pipeline configuration. In our case, it's using version 0.2 of the configuration format.
+
+
+
+phases: This section defines various phases or steps in the CI/CD pipeline, each with specific actions or commands to be executed.
+
+
+
+-install: This phase specifies runtime versions and configurations. It sets the Java runtime version to "corretto8."
+
+
+
+-pre_build: In this phase, commands are executed before the actual build process. It includes initializing the environment and exporting an AWS CodeArtifact authorization token to an environment variable named CODEARTIFACT_AUTH_TOKEN.
+
+
+
+-build: This phase contains commands related to the build process. It prints a message with the current date and then invokes Maven to compile a Java project using "settings.xml” file.
+
+
+
+-post_build: After the build, this phase executes commands. Similar to the build phase, it prints a message with the current date and then uses Maven to package the project.
+
+
+
+artifacts: This section specifies how artifacts generated during the build should be handled.
+
+
+
+-files: It lists the files that should be considered as artifacts. In our case, it is specifying a WAR (Web Application Archive) file located at "target/unicorn-web-project.war" as the primary artifact.
+
+
+
+-discard-paths: This setting determines whether to preserve directory paths when packaging the artifacts. "no" suggests that the directory paths should not be discarded.
+
+
+
+In summary, we can say that this buildspec.yml file represents a CI/CD pipeline definition that includes phases for installation, pre-build setup, the build process, and post-build actions. It compiles a Java project using Maven, exports an AWS CodeArtifact authorization token, and packages the project. The resulting WAR file is specified as the primary artifact to be retained.
+
+
+
+Let’s save the file. Type ‘:wq’ and exit the file. This command saves and exits the buildspec.yml file.
+
+
+
+Let us now commit and push these changes.
+
+
+
+Ensure you are in the project’s directory. If not, use the following navigation command.
+
+
+
+cd ~/environment/unicorn-web-project
+
+
+
+git add *
+
+git commit -m "Adding buildspec.yml file"
+
+git push -u origin main
+
+
+
+
+
+5.4 Modify the IAM policy
+We are referring to the CodeArtifact repository in this buildspec.yml file, we have to slightly modify the previously auto-generated IAM role. Remember this IAM role was created while we were doing settings in the CodeBuild console. Let’s go to the IAM console and locate the IAM role.
+
+
+
+In Roles in the menu on the left, search for codebuild-unicorn-web-build-service-role to locate the auto-generated role and click it.
+
+
+
+Then click on the Add permissions button and select Attach policies from the drop-down menu.
+
+
+
+Here, search for codeartifact-unicorn-consumer-policy, select the item, and click Attach policies.
+
+
+
+5.5 Test the build project
+Allright, we have set all the necessary inputs required for our build process. So let’s build our Java web app using CodeBuild.
+
+
+
+Go to the AWS CodeBuild console.
+
+
+
+Select the unicorn-web-build project and select Start build > Start now.
+
+
+
+Monitor the logs and wait for the build status to complete. Once the status turns to ‘Succeeded’, go to S3 bucket console and check for the generated artifact. The S3 bucket should contain a WAR file inside a zip named unicorn-web-project.zip.
+
+
+
+That’s it, our build project has generated the output and we will use this output artifact for the next stages in this CICD project.
+
+
+
+At this stage we have our source code in CodeCommit, the packages in CodeArtifact, build project in CodeBuild and artifact in S3 bucket. Right now things are all in manual mode, we will automate all these in later stages.
+
+
+
+Now let’s deploy the WAR file using AWS CodeDeploy.
+
+
+
+Task 6: Deploy using AWS CodeDeploy
+We will use Amazon EC2 for the deployment. Let's go to the AWS CodeDeploy console.
+
+
+
+6.1 Create EC2 instance
+
+
+First go to the CloudFormation console. Create a new text file in your local machine. Copy and paste the following CloudFormation YAML template and save it.
+
+
+
+---
+
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+
+AmazonLinuxAMIID:
+
+Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+
+Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+
+MyIP:
+
+Type: String
+
+Description: My IP address e.g. 1.2.3.4/32 for Security Group HTTP access rule. Get your IP from http://checkip.amazonaws.com/.
+
+AllowedPattern: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/32
+
+ConstraintDescription: must be a valid IP address of the form x.x.x.x/32
+
+
+
+Resources:
+
+VPC:
+
+Type: AWS::EC2::VPC
+
+Properties:
+
+CidrBlock: 10.11.0.0/16
+
+EnableDnsHostnames: true
+
+EnableDnsSupport: true
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::VPC'] ]
+
+
+
+InternetGateway:
+
+Type: AWS::EC2::InternetGateway
+
+Properties:
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::InternetGateway'] ]
+
+
+
+VPCGatewayAttachment:
+
+Type: AWS::EC2::VPCGatewayAttachment
+
+Properties:
+
+VpcId: !Ref VPC
+
+InternetGatewayId: !Ref InternetGateway
+
+
+
+PublicSubnetA:
+
+Type: AWS::EC2::Subnet
+
+Properties:
+
+AvailabilityZone: !Select
+
+- 0
+
+- Fn::GetAZs: !Ref 'AWS::Region'
+
+VpcId: !Ref VPC
+
+CidrBlock: 10.11.0.0/20
+
+MapPublicIpOnLaunch: true
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::PublicSubnetA'] ]
+
+
+
+PublicRouteTable:
+
+Type: AWS::EC2::RouteTable
+
+Properties:
+
+VpcId: !Ref VPC
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::PublicRouteTable'] ]
+
+
+
+PublicInternetRoute:
+
+Type: AWS::EC2::Route
+
+DependsOn: VPCGatewayAttachment
+
+Properties:
+
+DestinationCidrBlock: 0.0.0.0/0
+
+GatewayId: !Ref InternetGateway
+
+RouteTableId: !Ref PublicRouteTable
+
+
+
+PublicSubnetARouteTableAssociation:
+
+Type: AWS::EC2::SubnetRouteTableAssociation
+
+Properties:
+
+RouteTableId: !Ref PublicRouteTable
+
+SubnetId: !Ref PublicSubnetA
+
+
+
+PublicSecurityGroup:
+
+Type: AWS::EC2::SecurityGroup
+
+Properties:
+
+VpcId:
+
+Ref: VPC
+
+GroupDescription: Access to our Web server
+
+SecurityGroupIngress:
+
+- Description: Enable HTTP access via port 80 IPv4
+
+IpProtocol: tcp
+
+FromPort: '80'
+
+ToPort: '80'
+
+CidrIp: !Ref MyIP
+
+SecurityGroupEgress:
+
+- Description: Allow all traffic egress
+
+IpProtocol: -1
+
+CidrIp: 0.0.0.0/0
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::PublicSecurityGroup'] ]
+
+
+
+ServerRole:
+
+Type: AWS::IAM::Role
+
+Properties:
+
+AssumeRolePolicyDocument:
+
+Version: "2012-10-17"
+
+Statement:
+
+-
+
+Effect: "Allow"
+
+Principal:
+
+Service:
+
+- "ec2.amazonaws.com"
+
+Action:
+
+- "sts:AssumeRole"
+
+Path: "/"
+
+ManagedPolicyArns:
+
+- "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+
+- "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+
+
+
+DeployRoleProfile:
+
+Type: AWS::IAM::InstanceProfile
+
+Properties:
+
+Path: "/"
+
+Roles:
+
+-
+
+Ref: ServerRole
+
+
+
+WebServer:
+
+Type: AWS::EC2::Instance
+
+Properties:
+
+ImageId: !Ref AmazonLinuxAMIID
+
+InstanceType: t2.micro
+
+IamInstanceProfile: !Ref DeployRoleProfile
+
+NetworkInterfaces:
+
+- AssociatePublicIpAddress: true
+
+DeviceIndex: 0
+
+GroupSet:
+
+- Ref: PublicSecurityGroup
+
+SubnetId:
+
+Ref: PublicSubnetA
+
+Tags:
+
+- Key: 'Name'
+
+Value: !Join ['', [!Ref 'AWS::StackName', '::WebServer'] ]
+
+- Key: 'role'
+
+Value: 'webserver'
+
+
+
+Outputs:
+
+URL:
+
+Value:
+
+Fn::Join:
+
+- ''
+
+- - http://
+
+- Fn::GetAtt:
+
+- WebServer
+
+- PublicIp
+
+Description: Unicorn web server
+
+—
+
+
+
+
+
+In the CloudFormation Console, click Create stack > with new resources (standard).
+
+
+
+Select Upload a template file and click Choose file. Choose the yaml file that you just created and click Next.
+
+
+
+Give a name to the stack UnicornStack and provide your IP address from http://checkip.amazonaws.com/ in the format 1.2.3.4/32 when prompted.
+
+
+
+Keep all the remaining defaults as it is.
+
+
+
+Acknowledge the IAM resources checkbox before clicking Create stack.
+
+
+
+Wait for the stack to complete. This should take 3-5 minutes.
+
+
+
+Once successful, search for "EC2" in the AWS Console and click on Instances (running). You will see one instance named UnicornStack::WebServer.
+
+
+
+6.2 Create scripts to run the application
+Now we have to create some bash scripts in our Git repository. CodeDeploy uses these scripts to setup and deploy the application on the target EC2 instance.
+
+
+
+We will do this in Cloud9.
+
+
+
+Go to the Cloud9 IDE.
+
+
+
+Let’s create a new folder with name scripts under ~/environment/unicorn-web-project/.
+
+
+
+Then create a file with the name install_dependencies.sh file in the scripts folder and add the following script lines to it.
+
+
+
+#!/bin/bash
+
+sudo yum install tomcat -y
+
+sudo yum -y install httpd
+
+sudo cat << EOF > /etc/httpd/conf.d/tomcat_manager.conf
+
+<VirtualHost *:80>
+
+ServerAdmin root@localhost
+
+ServerName app.wildrydes.com
+
+DefaultType text/html
+
+ProxyRequests off
+
+ProxyPreserveHost On
+
+ProxyPass / http://localhost:8080/unicorn-web-project/
+
+ProxyPassReverse / http://localhost:8080/unicorn-web-project/
+
+</VirtualHost>
+
+EOF
+
+
+
+Then create another file with the name start_server.sh file in the scripts folder and add the following script lines to it.
+
+
+
+#!/bin/bash
+
+sudo systemctl start tomcat.service
+
+sudo systemctl enable tomcat.service
+
+sudo systemctl start httpd.service
+
+sudo systemctl enable httpd.service
+
+
+
+Then create one more file with the name stop_server.sh file in the scripts folder and add the following script lines to it.
+
+
+
+#!/bin/bash
+
+isExistApp="$(pgrep httpd)"
+
+if [[ -n $isExistApp ]]; then
+
+sudo systemctl stop httpd.service
+
+fi
+
+isExistApp="$(pgrep tomcat)"
+
+if [[ -n $isExistApp ]]; then
+
+sudo systemctl stop tomcat.service
+
+fi
+
+
+
+Now we need to draft the most important script for the deployment stage which is the AppSpec file. We have already discussed the importance of this file in the CodeDeploy chapter. It specifies what actions to take during a deployment, and defines which files from the source are placed where at the target destination.
+
+
+
+Remembe the AppSpec file must be named appspec.yml and placed in the root directory of the source code.
+
+
+
+Now create a new file with the name appspec.yml in the ~/environment/unicorn-web-project/ folder and add the following script lines to it.
+
+
+
+version: 0.0
+
+os: linux
+
+files:
+
+- source: /target/unicorn-web-project.war
+
+destination: /usr/share/tomcat/webapps/
+
+hooks:
+
+BeforeInstall:
+
+- location: scripts/install_dependencies.sh
+
+timeout: 300
+
+runas: root
+
+ApplicationStart:
+
+- location: scripts/start_server.sh
+
+timeout: 300
+
+runas: root
+
+ApplicationStop:
+
+- location: scripts/stop_server.sh
+
+timeout: 300
+
+runas: root
+
+
+
+Now we have to ensure that the newly added scripts folder and appspec.yml file are available to CodeDeploy, we need to add them to the zip file that CodeBuild creates. This is done by modifying the artifacts section in the buildspec.yml.
+
+
+
+Let’s do this. Go to buildspec.yml file and add 2 extra lines as below.
+
+
+
+phases:
+
+[..]
+
+
+
+artifacts:
+
+files:
+
+- target/unicorn-web-project.war
+
+- appspec.yml
+
+- scripts/**/*
+
+discard-paths: no
+
+
+
+Now commit all the changes to CodeCommit.
+
+
+
+cd ~/environment/unicorn-web-project
+
+git add *
+
+git commit -m "Adding CodeDeploy files"
+
+git push -u origin main
+
+
+
+Now we have to go to CodeBuild console and build the project to accommodate all the changes that we just made. So click on Start build to run the build project unicorn-web-build in CodeBuild console.
+
+6.3 Create CodeBuild service IAM Role
+Now CodeDeploy needs a service role to grant its permissions to the desired compute platform. For EC2/On-Premises deployments we will use the AWS Managed AWSCodeDeployRole policy.
+
+
+
+Go to the IAM console, choose Roles and click on Create role.
+
+
+
+Choose Trusted entity as AWS service ,choose CodeDeploy as the service and then select CodeDeploy for the use case. Click Next.
+
+
+
+Accept the AWSCodeDeployRole default policy.
+
+
+
+Click Next and give a name to the role as UnicornCodeDeployRole.
+
+
+
+Then click Create role to finish.
+
+
+
+6.4 Create CodeDeploy application
+With our necessary files in position, it's time to establish a CodeDeploy application. An application in CodeDeploy is nothing but a container or a name used by CodeDeploy to guarantee the accurate revision, deployment configuration, and deployment group are linked during a deployment.
+
+
+
+Go to CodeDeploy console and choose "Applications" and proceed to "Create application."
+
+
+
+Assign the name "unicorn-web-deploy" to the application and opt for "EC2/On-premises" as the Compute platform, although alternatives for AWS Lambda and Amazon ECS are also available. Finally, click "Create application."
+
+
+
+6.5 Create Deployment group
+Let's create a deployment group, which contains settings and configurations used during the deployment. It defines for example that our deployment shall target any EC2 instances with a specific tag.
+
+
+
+Under the unicorn-web-deploy application in the Deployment groups tab click Create deployment group.
+
+
+
+Configure the following options.
+
+
+
+Name = unicorn-web-deploy-group
+
+Service role = arn:aws:iam::<aws-account-id>:role/UnicornCodeDeployRole
+
+Deployment type = In-place
+
+Environment configuration = Amazon EC2 instances
+
+Tag group 1 Key = role
+
+Tag group 1 Value = webserver
+
+Install AWS CodeDeploy Agent = Now and schedule updates (14 days)
+
+Deployment settings = CodeDeployDefault.AllAtOnce
+
+Load balancer = Uncheck Enable load balancing (we just have one server)
+
+
+
+Then click on Create deployment group.
+
+
+
+6.6 Create Deployment
+
+
+After creating our deployment group, i.e. defining the resources that we want to deploy, we can now create a deployment!
+
+
+
+In the unicorn-web-deploy-group click Create deployment.
+
+
+
+For the revision location use the S3 bucket that we created earlier.
+
+
+
+The URL will look like this.
+
+
+
+s3://<my-artifact-bucket-name>/unicorn-web-build.zip
+
+
+
+Then select the revision file type as .zip.
+
+
+
+Keep the other settings as default and click on Create deployment.
+
+
+
+The deployment will now begin. Keep an eye on the deployment lifecycle events and check it completes successfully.
+
+
+
+Finally check that the web application is working by browsing to http://<public-ip-address>. You will get the public IP address from the instance details Networking tab. Remember that if you click the open address link this will default to https and needs to be changed to http.
+
+
+
+So here, we are now able to access the web application.
+
+
+
+So now we have built and deployed our Java web application. All this we did manually. We have to automate all these processes. If we make any changes in CodeCommit, the changes should be reflected in the end result without any human intervention.
+
+
+
+So this is where we will use the AWS CodePipeline.
+
+
+
+Task 7: Automate using AWS CodePipleine
+Now we will use CodePipeline to create an automated pipeline using the CodeCommit, CodeBuild and CodeDeploy components created earlier. The pipeline will be triggered when a new commit is pushed to the main branch of our Git repo.
+
+
+
+7.1 Create Pipeline
+Go to the CodePipeline console.
+
+
+
+Under Pipelines choose Create pipeline.
+
+
+
+Enter unicorn-web-pipeline as the pipeline name. Choose to create a new service role and use the auto generated name. Leave other settings as default and click Next.
+
+
+
+Under the source provider select AWS CodeCommit and select the unicorn-web-project as the repository. Set the branch name to be main. Leave the detection option as Amazon CloudWatch Events and the output artifact format to be CodePipeline default. Click Next.
+
+
+
+On the build stage screen select AWS CodeBuild as the build provider and unicorn-web-build as the project name. Leave the build type as Single build. Click Next.
+
+
+
+On the deploy stage screen select AWS CodeDeploy as the deploy provider and unicorn-web-deploy as the application name. Select unicorn-web-deploy-group as the deployment group. Click Next.
+
+
+
+Review the pipeline settings and click Create pipeline. Once you click create, the whole pipeline will run for the first time. Ensure it completes successfully.
+
+
+
+7.2 Release a change
+
+
+
+All right we have a fully managed CICD pipeline now. Let’s test it. We will make some changes in the CodeCommit and see if these changes are automatically updated in the pipeline.
+
+
+
+Go to Cloud9 environment.
+
+
+
+Update the index.jsp with the below html code.
+
+
+
+<!doctype html>
+
+
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<style>
+
+body{
+
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.site-header .title{
+
+background: url(images/wr-home-top.jpg) no-repeat top;
+
+background-size: cover;
+
+padding-bottom: 70.2753441802%;
+
+margin: 0;
+
+text-indent: -999em;
+
+position: relative;
+
+}
+
+.home-about {
+
+background: #f50856;
+
+color: #fff;
+
+padding: 5rem 0;
+
+text-align: center;
+
+}
+
+</style>
+
+<title>Wild Rydes</title>
+
+</head>
+
+
+
+<body>
+
+<header class="site-header">
+
+<h1 class="title">Wild Rydes</h1>
+
+</header>
+
+<section class="home-about">
+
+
+
+<h2 class="section-title">How Does This Work?</h2>
+
+<p class="content">
+
+In today's fast paced world, you've got places you need to be but not enough time in your jam packed schedule. Wouldn't it be nice if there were a transportation service that changed the way you get around daily? Introducing Wild Rydes, an innovative transportation service that helps people get to their destination faster and hassle-free. Getting started is as easy as tapping a button in our app.
+
+</p>
+
+<h2 class="section-title">Our Story</h2>
+
+<p class="content">
+
+Wild Rydes was started by a former hedge fund analyst and a software developer. The two long-time friends happened upon the Wild Rydes idea after attending a silent yoga retreat in Nevada. After gazing upon the majestic herds of unicorns prancing across a surreal Nevada sunset, they witnessed firsthand the poverty and unemployment endemic to that once proud race. Whether it was modern society's reliance on science over magic or not, we'll never know the cause of their Ozymandian downfall and fade to obscurity. Moved by empathy, romance, and free enterprise, they saw an opportunity to marry society's demand for faster, more flexible transportation to underutilized beasts of labor through an on-demand market making transportation app. Using the founders' respective expertise in animal husbandry and software engineering, Wild Rydes was formed and has since raised untold amounts of venture capital. Today, Wild Rydes has thousands of unicorns in its network fulfilling hundreds of rydes each day.
+
+</p>
+
+</section>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+Download the background image and save it to your local machine. Then create a new folder images below unicorn-web-project/src/main/webapp/images/ and upload the file via Cloud9 using File > Upload Local File…
+
+
+
+Link to download background image.
+
+
+
+Commit the changes using the command below.
+
+
+
+cd ~/environment/unicorn-web-project/
+
+git add *
+
+git commit -m "Visual improvements to homepage"
+
+git push -u origin main
+
+
+
+Check back in the CodePipeline console. The pipeline should be triggered by the push automatically. Wait for the pipeline to complete successfully.
+
+
+
+Once the pipeline has finished, browse to the EC2 public IP address http://<ip-address>/ to see the changes.
+
+
+
+Congratulations! There you are. You have a working CICD pipeline.
+
+
+
+Conclusion
+Well done! You've finished the project.
+
+
+
+Throughout this project, you've delved into the utilization of AWS CodeCommit for Git repositories and AWS CodeArtifact for build artifacts. You've established a build workflow employing AWS CodeBuild and mastered deployment management with AWS CodeDeploy. Plus, you've gained the know-how to integrate these services seamlessly into a fully managed CI/CD pipeline, all thanks to AWS CodePipeline.
+
+
+Bonus Lecture
+Bonus Lecture
+
+Congrats on completing the course! Here you can find links to all my courses with special discounts included.
+
+Keep on learning:
+
+Use the coupon PRAVIN-DEC-2024 for special discounts on all my courses (included in the links below)
+
+All my courses:
+
+[NEW] Pass AWS Certified Cloud Practitioner CLF-C02|Beginner
+
+AWS Fundamentals - Amazon Web Services for Beginners [2024]
+
+Cloud Computing with AWS for Absolute Beginners
+
+Linux for Cloud Engineers: A Complete Project Based Learning
+
+Git and GitHub for Beginners: Learn Version Control
